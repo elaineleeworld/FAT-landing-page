@@ -12,13 +12,14 @@ class Header extends Component {
 		        <header className="App-header">
 		          <img src={logo} className="App-logo" alt="logo" />
 		          <h1 className="App-title">FF0000 Ad Tech ( FAT ) </h1>
-		          <DownloadButton/>
+		         <DownloadButton/>
 
 		          <div className='App-intro'>
-					<li><Link to='/'>Home</Link></li>
-			        <li><Link to='/features'>Features</Link></li>
-			        <li><Link to='/showcase'>Showcase</Link></li>
-		        </div>
+					<span><Link to='/' className='App-links'>Home</Link></span>
+			        <span><Link to='/features' className='App-links'>Features</Link></span>
+			        <span><Link to='/showcase' className='App-links'>Showcase</Link></span>
+		          </div>
+		           
 		        </header>
 		        
 		      </div>

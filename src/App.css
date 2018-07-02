@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #222;
-  height: 160px;
+  height: 200px;
   padding: 20px;
   color: white;
 }
@@ -19,11 +19,26 @@
 }
 
 .App-intro {
+  text-align:center;
+  padding-top: 20px;
+}
+
+.App-links {
+  text-decoration: none;
+  color:white;
+  padding-right: 30px;
+  font-size: 20px;
+}
+
+/*.App-intro {
+  background-color:yellow;
+
   font-size: large;
   text-align: right;
   display: inline;
   padding: 20px;
-}
+
+}*/
 
 /*@keyframes App-logo-spin {
   from { transform: rotate(0deg); }
