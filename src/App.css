@@ -38,11 +38,25 @@
   text-align:center ;
   padding: 0px 20px;
 }
+
+.home-middle {
+
+}
 li {
   margin: 0 auto;
   text-align:center;
   padding: 20px;
+  border: 2px solid grey;
+  display: inline-block;
+  width: 180px;
+  
+}
 
+li:nth-child(odd){
+  background: yellow;
+}
+li:nth-child(even){
+  background: lightgreen;
 }
 
 .features-parent {

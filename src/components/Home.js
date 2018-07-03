@@ -12,11 +12,26 @@ const Home = () => (
 
 	  <div className='home-middle'>
 	  	<h1>Interested? How to get started now:</h1>
+	  	<div>
+	  	<h3>STEP 1</h3>
 	  	<li>Use a template already made for you</li>
+	  	</div>
+	  	<div>
+	  	<h3>STEP 2</h3>
 	  	<li>start the Creative Server</li>
+	  	</div>
+	  	<div>
+	  	<h3>STEP 3</h3>
 	  	<li>start a watch process and let your creative juices flow!</li>
+	  	</div>
+	  	<div>
+	  	<h3>STEP 4</h3>
 	  	<li>with your finished banner ad, publish a ready-to-go, traffic deliverable</li>
-	  	<li>Have specific ad networks you are working with?  No problem, we have templates already configured (Doubleclick Campaign Manager, Doubleclick Studio, FlashTalking, Sizmek)</li>
+	  	</div>
+	  	<div>
+	  	<h3>Working with DCS, DCM, FlashTalking, Sizmek</h3>
+	  	<li>Have specific ad networks you are working with?  No problem, we have templates already configured for you</li>
+	  	</div>
 	  </div>
 
 	  <h1>Try Creative Server and the FF0000 FAT Framework together, or just use Creative Server in additon to your current build process</h1>
