@@ -9,10 +9,10 @@ class Particle extends Component{
             params={{
                   "particles": {
                   "number": {
-                    "value": 40,
+                    "value": 30,
                     "density": {
                       "enable": true,
-                      "value_area": 500
+                      "value_area": 900
                     }
                   },
                   "color": {
@@ -57,7 +57,7 @@ class Particle extends Component{
                     "enable": true,
                     "distance": 150,
                     "color": "#ff0000",
-                    "opacity": 0.6,
+                    "opacity": 0.4,
                     "width": 1
                   },
                   "move": {
