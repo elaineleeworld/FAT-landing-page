@@ -7,9 +7,13 @@
   height: 80px;
 }
 
+.App-red-logo {
+  float:right;
+}
+
 .App-header {
   background-color: #222;
-  height: 200px;
+  height: 220px;
   padding: 20px;
   color: white;
 }
@@ -29,6 +33,24 @@
   padding-right: 30px;
   font-size: 20px;
 }
+
+.home-parent {
+  text-align:center ;
+  padding: 0px 20px;
+}
+li {
+  margin: 0 auto;
+  text-align:center;
+  padding: 20px;
+
+}
+
+.features-parent {
+  text-align:center;
+  
+}
+
+
 
 /*.App-intro {
   background-color:yellow;
