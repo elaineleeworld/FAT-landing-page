@@ -17,9 +17,11 @@ class DownloadButton extends Component {
 	render(){
 		return(
 			<div className="App-button">
-		        <CustomizedButton onClick={() => {alert('Welcome!')}}>
+			<a href="https://github.com/ff0000-ad-tech/tmpl-standard-base" target="_blank">
+		        <CustomizedButton>
 		          Download Here
 		        </CustomizedButton>
+		        </a>
 		     </div>
 			);
 	}

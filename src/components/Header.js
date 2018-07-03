@@ -12,7 +12,9 @@ class Header extends Component {
 			 <div className="App">
 		        <header className="App-header">
 		          <img src={logo} className="App-logo" alt="logo" />
+		          <a href="http://www.ff0000.com" target="_blank">
 		          <img src={red_logo} className="App-red-logo" alt="red_logo" />
+		          </a>
 		          <h1 className="App-title">FF0000 Ad Tech ( FAT ) Framework</h1>
 		         <DownloadButton/>
 
