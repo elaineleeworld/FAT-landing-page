@@ -7,6 +7,7 @@ const Home = () => (
 	  <div className='home-top'>
 	    <h1>Faster development so you can focus on creative execution.</h1>
 	    <p>Our lightweight Javascript framework enables high-volume production of banner ads where you can create many variations and many sizes efficiently.</p>
+	    <p>INSERT IMAGE OR GIF OF MULTIPLE CREATIVE SIZES BEING MADE</p>
 	    <p>We provide common out-of-the box components (dates, video player, buttons) and enable you to manage dynamic states simply.</p>
 	  </div>
 
@@ -14,19 +15,19 @@ const Home = () => (
 	  	<h1>Interested? How to get started now:</h1>
 	  	<div>
 	  	<h3>STEP 1</h3>
-	  	<li>Use a template already made for you</li>
+	  	<li>TEMPLATE <br/>Use a template already made for you</li>
 	  	</div>
 	  	<div>
 	  	<h3>STEP 2</h3>
-	  	<li>start the Creative Server</li>
+	  	<li>SERVER <br/>start the Creative Server</li>
 	  	</div>
 	  	<div>
 	  	<h3>STEP 3</h3>
-	  	<li>start a watch process and let your creative juices flow!</li>
+	  	<li>FOCUS ON DESIGN <br/>start a watch process and let your creative juices flow!</li>
 	  	</div>
 	  	<div>
 	  	<h3>STEP 4</h3>
-	  	<li>with your finished banner ad, publish a ready-to-go, traffic deliverable</li>
+	  	<li>DELIVERABLE <br/>with your finished banner ad, publish a ready-to-go, traffic deliverable</li>
 	  	</div>
 	  	<div>
 	  	<h3>Working with DCS, DCM, FlashTalking, Sizmek</h3>

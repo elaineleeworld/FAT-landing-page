@@ -18,7 +18,53 @@ class Showcase extends Component {
 		return(
 			<div className='showcase-parent'>
 			    <h1>Take a peek at some of the innovative ads we have created with the FAT framework</h1>
-			    <video id="samp" width="640" height="480" controls>
+			    <video id="samp"  controls>
+
+		        <source src={intro_women} type="video/mp4">
+		        </source>
+		      </video>
+
+		      <video id="samp"  controls>
+
+		        <source src={intro_women} type="video/mp4">
+		        </source>
+		      </video>
+		      <video id="samp"  controls>
+
+		        <source src={intro_women} type="video/mp4">
+		        </source>
+		      </video>
+		      <video id="samp"  controls>
+
+		        <source src={intro_women} type="video/mp4">
+		        </source>
+		      </video>
+		      <video id="samp"  controls>
+
+		        <source src={intro_women} type="video/mp4">
+		        </source>
+		      </video>
+		      <video id="samp"  controls>
+
+		        <source src={intro_women} type="video/mp4">
+		        </source>
+		      </video>
+		      <video id="samp"  controls>
+
+		        <source src={intro_women} type="video/mp4">
+		        </source>
+		      </video>
+		      <video id="samp"  controls>
+
+		        <source src={intro_women} type="video/mp4">
+		        </source>
+		      </video>
+		      <video id="samp"  controls>
+
+		        <source src={intro_women} type="video/mp4">
+		        </source>
+		      </video>
+		      <video id="samp"  controls>
 
 		        <source src={intro_women} type="video/mp4">
 		        </source>
