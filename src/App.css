@@ -78,17 +78,31 @@ video {
   background: transparent;
 }
 
+
+circle {
+    background: #f00;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 140px;
+    margin:10px;
+    font-weight: bold;
+}
+
 .features-container {
   text-align:center;
 }
 
-.features-parent {
+
+
+/*.features-parent {
   max-width: 240px;
   width: 44%;
-  /*margin: 0 auto;*/
-}
+}*/
 
-.features-list {
+/*.features-list {
   z-index: 1;
   text-align: center;
   display: table-cell;
@@ -99,7 +113,7 @@ video {
   border: 2px solid grey;
   background: lightyellow;
   color: #000;
-}
+}*/
 
 .circle {
   position: relative;
