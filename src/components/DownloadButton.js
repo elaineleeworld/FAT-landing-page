@@ -19,7 +19,7 @@ class DownloadButton extends Component {
 			<div className="App-button">
 			<a href="https://github.com/ff0000-ad-tech/tmpl-standard-base" target="_blank">
 		        <CustomizedButton>
-		          Download Here
+		          Download Template Here to Get Started
 		        </CustomizedButton>
 		        </a>
 		     </div>
