@@ -4,15 +4,15 @@ import './index.css';
 import App from './App';
 
 
-import { BrowserRouter, Link } from 'react-router-dom';
+import { HashRouter, Link } from 'react-router-dom';
 
 
 // ReactDOM.render(<App />, document.getElementById('root'));
 
 ReactDOM.render((
-  <BrowserRouter>
+  <HashRouter>
     <App />
-  </BrowserRouter>
+  </HashRouter>
 ), document.getElementById('root'));
 
 

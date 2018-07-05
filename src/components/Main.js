@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { HashRouter, Route, Switch, Link } from 'react-router-dom';
 import Home from './Home.js';
 import Features from './Features.js';
 import Showcase from './Showcase.js';
