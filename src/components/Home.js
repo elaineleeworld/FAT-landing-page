@@ -23,7 +23,7 @@ const Home = () => (
 	  	</div>
 	  	<div>
 	  	<h3>STEP 3</h3>
-	  	<li><a href="https://ff0000-ad-tech.github.io/ad-docs/" target="_blank">USE FAT FRAMEWORK REFER TO DOCS HERE</a> and FOCUS ON DESIGN <br/>start a server watch process. Let your creative juices flow!</li>
+	  	<li><a href="https://ff0000-ad-tech.github.io/ad-docs/" target="_blank">USE FAT FRAMEWORK DOCS HERE</a><br/> and FOCUS ON DESIGN <br/>start a server watch process. Let your creative juices flow!</li>
 	  	</div>
 	  	<div>
 	  	<h3>STEP 4</h3>
