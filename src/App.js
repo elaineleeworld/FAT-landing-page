@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import logo from './images/logo.png';
-import './App.css';
-import DownloadButton from './components/DownloadButton.js';
+import './styles/App.css';
 import Header from './components/Header.js';
 import Main from './components/Main.js';
 

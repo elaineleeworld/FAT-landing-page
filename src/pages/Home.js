@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 
@@ -15,15 +15,15 @@ const Home = () => (
 	  	<h1>Interested? How to get started now:</h1>
 	  	<div>
 	  	<h3>STEP 1</h3>
-	  	<li><a href="https://github.com/ff0000-ad-tech/tmpl-standard-base" target="_blank">TEMPLATE </a><br/>Use a template already made for you</li>
+	  	<li><a href="https://github.com/ff0000-ad-tech/tmpl-standard-base" target="_blank" rel="noopener noreferrer">TEMPLATE </a><br/>Use a template already made for you</li>
 	  	</div>
 	  	<div>
 	  	<h3>STEP 2</h3>
-	  	<li><a href="https://github.com/ff0000-ad-tech/wp-creative-server/blob/master/README.md" target="_blank">SERVER</a> <br/>start the Creative Server</li>
+	  	<li><a href="https://github.com/ff0000-ad-tech/wp-creative-server/blob/master/README.md" target="_blank" rel="noopener noreferrer">SERVER</a> <br/>start the Creative Server</li>
 	  	</div>
 	  	<div>
 	  	<h3>STEP 3</h3>
-	  	<li><a href="https://ff0000-ad-tech.github.io/ad-docs/" target="_blank">USE FAT FRAMEWORK DOCS HERE</a><br/> and FOCUS ON DESIGN <br/>start a server watch process. Let your creative juices flow!</li>
+	  	<li><a href="https://ff0000-ad-tech.github.io/ad-docs/" target="_blank" rel="noopener noreferrer">USE FAT FRAMEWORK DOCS HERE</a><br/> and FOCUS ON DESIGN <br/>start a server watch process. Let your creative juices flow!</li>
 	  	</div>
 	  	<div>
 	  	<h3>STEP 4</h3>

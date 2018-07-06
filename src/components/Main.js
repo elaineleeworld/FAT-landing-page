@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch, Link } from 'react-router-dom';
-import Home from './Home.js';
-import Features from './Features.js';
-import Showcase from './Showcase.js';
+import { Route, Switch } from 'react-router-dom';
+import Home from '../pages/Home.js';
+import Features from '../pages/Features.js';
+import Showcase from '../pages/Showcase.js';
 
 
 class Main extends Component {

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Particle from './Particle.js';
+import React from 'react';
+import Particle from '../components/Particle.js';
 
 
 const Features = () => (
