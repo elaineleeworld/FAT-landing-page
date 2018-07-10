@@ -26,7 +26,7 @@ const Home = () => (
 	  	</div>
 	  	<div>
 	  	<h3>STEP 3: AUTHORING</h3>
-	  	<li><a href="https://ff0000-ad-tech.github.io/ad-docs/" target="_blank" rel="noopener noreferrer">Write the FAT Framework & Greensock (or use your preferred libraries)</a><br/>se your budgets for DESIGN, not tooling -- anything that's possible in an IAB container can be built!</li>
+	  	<li><a href="https://ff0000-ad-tech.github.io/ad-docs/" target="_blank" rel="noopener noreferrer">Write the FAT Framework & Greensock (or use your preferred libraries)</a><br/>Use your budgets for DESIGN, not tooling -- anything that's possible in an IAB container can be built!</li>
 	  	</div>
 	  	<div>
 	  	<h3>STEP 4: DELIVERIES</h3>

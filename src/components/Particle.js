@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import Particles from 'react-particles-js';
- 
-class Particle extends Component{
-  
-    render(){
-        return (
-            <Particles
-            params={{
-                  "particles": {
+
+const particleConfig = {
+  "particles": {
                   "number": {
                     "value": 30,
                     "density": {
@@ -115,7 +110,14 @@ class Particle extends Component{
                   }
                 },
                 "retina_detect": true
-              }}
+}
+ 
+class Particle extends Component{
+  
+    render(){
+        return (
+            <Particles
+            params={particleConfig}
                />
         );
     };
