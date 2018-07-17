@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Particle from '../components/Particle.js';
 
 
+class Features extends Component {
+	constructor(props){
+		super(props)
+		this.state = {
+		text1: { clicked: true }
+		}
+	}
 
-const Features = () => (
-
-		<div className="features-container">
+	render(){
+		return(
+			<div className="features-container">
 			<div>
 		    <h1>Unique features of our framework</h1>
 		    </div>
@@ -15,8 +22,8 @@ const Features = () => (
 			    <Particle />
 			    </div>
 
-			    <circle>NPM</circle>
-			    <circle>Binary Compiling</circle>
+			    <circle onClick={ () => this.setState({clicked: !this.state.clicked})}> {this.state.clicked ? 'Open source collaboration benefits from standards' : "NPM"}</circle>
+			    <circle>Binary</circle>
 			    <circle>ES6</circle>
 			    <circle>Javascript</circle>
 			    <circle>Within IAB Specs</circle>
@@ -29,6 +36,10 @@ const Features = () => (
 
 			  
 			 </div>
-		</div>
-)
+		</div>)
+	}
+}
+
+
+		
 export default Features;

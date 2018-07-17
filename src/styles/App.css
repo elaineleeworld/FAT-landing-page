@@ -71,3 +71,7 @@ circle {
 
 .features-container {
   text-align: center; }
+
+html, body {
+  margin: 0px;
+  padding: 0px; }
