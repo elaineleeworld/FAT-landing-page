@@ -8,9 +8,7 @@ const circleList = [
 
 
 
-
-const renderCircles = circleList.map((circle) => <circle id="test" key={circle.id}><p id={circle.id}>{circle.on}</p></circle>)
-
+const renderCircles = circleList.map((circle) => <circle><p id={circle.id}>{circle.on}</p></circle>)
 
 
 
@@ -29,19 +27,16 @@ class Circle extends Component {
 			console.log("CLICKED", circleList)
 			console.log("EVENT ID", id)
 			this.setState({clicked: !this.state.clicked})
-			for (var i = 0; i < circleList.length; i++) {
 				
 			console.log("STATE", this.state.clicked)
 			// console.log("ID", this.props)
 			if (this.state.clicked){
-				circleList[i].on
-				console.log("ON", circleList[i].on)
+				circleList[id].on
+				console.log("ON", circleList[id].on)
 			} else {
-				circleList[i].off
-				console.log("OFF", circleList[i].off)
-			}
-		}	
-			
+				circleList[id].off
+				console.log("OFF", circleList[id].off)
+			}	
 		}
 
 
