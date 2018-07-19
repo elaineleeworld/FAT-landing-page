@@ -30,13 +30,19 @@ class Circle extends Component {
 				
 			console.log("STATE", this.state.clicked)
 			// console.log("ID", this.props)
-			if (this.state.clicked){
-				circleList[id].on
-				console.log("ON", circleList[id].on)
+			if (id !== "parent") {
+				if (this.state.clicked){
+				    document.getElementsByTagName('p').innerHTML = circleList[id].on
+					console.log("ON", circleList[id].on)
+					console.log("P TAG ON", document.getElementsByTagName('p').innerHTML)
+				} else {
+					document.getElementsByTagName('p').innerHTML = circleList[id].off
+					console.log("OFF", circleList[id].off)
+					console.log("P TAG OFF", document.getElementsByTagName('p').innerHTML)
+				}	
 			} else {
-				circleList[id].off
-				console.log("OFF", circleList[id].off)
-			}	
+				return
+			}
 		}
 
 
