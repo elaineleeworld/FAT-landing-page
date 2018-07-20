@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Particle from '../components/Particle.js';
-import Circle from '../components/Circle.js';
+import CreateClickableCircle from '../components/CreateClickableCircle.js';
 
 
 class Features extends Component {
@@ -26,7 +26,7 @@ class Features extends Component {
 			    <div className='particles-js'>
 			    <Particle />
 			    </div>
-			    <Circle/>
+			    <CreateClickableCircle/>
 			    {/*<Circle/>
 			    <Circle/>*/}
 			   {/* <circle onClick={ () => this.setState({clicked: !this.state.clicked})}> {this.state.clicked ? 'Open source' : "NPM"}</circle>*/}

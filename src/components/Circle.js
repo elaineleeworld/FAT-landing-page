@@ -16,10 +16,11 @@ class Circle extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			clicked: false
+			clicked: false,
 		}
 		this.circleUpdate = this.circleUpdate.bind(this);
 		console.log("TRACE PROPS", props)
+		
 	}
 
 		circleUpdate(event){
@@ -27,7 +28,8 @@ class Circle extends Component {
 			console.log("CLICKED", circleList)
 			console.log("EVENT ID", id)
 			this.setState({clicked: !this.state.clicked})
-				
+	
+			console.log("P TAG ON BEFORE", document.getElementsByTagName('p').innerHTML)	
 			console.log("STATE", this.state.clicked)
 			// console.log("ID", this.props)
 			if (id !== "parent") {
@@ -41,14 +43,9 @@ class Circle extends Component {
 					console.log("P TAG OFF", document.getElementsByTagName('p').innerHTML)
 				}	
 			} else {
-				return
+				return false
 			}
 		}
-
-
-
-
-	
 
 	render(){
 		return(
