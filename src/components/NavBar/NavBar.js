@@ -13,6 +13,7 @@ const NavBar = props => (
 			<a href='http://www.wearered.com' target="_blank" rel="noopener noreferrer">
 				<img src={red_logo} className="red-logo" alt="red_logo" />
 			</a>
+			{/*<div className='navbar__title'><p>AD TECH</p></div>*/}
 			</div>
 
 			<div className='spacer'></div>

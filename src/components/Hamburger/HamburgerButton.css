@@ -1,5 +1,5 @@
 .toggle-button {
-	display:flex;
+	/*display:flex;*/
 	flex-direction: column;
 	justify-content: space-between;
 	height: 24px;
@@ -8,6 +8,7 @@
 	border: none;
 	padding: 0;
 	box-sizing:border-box;
+	display: none;
 }
 
 .toggle-button:focus {
@@ -18,4 +19,10 @@
 	width: 30px;
 	height: 3px;
 	background: red;
+}
+
+@media only screen and (max-width: 600px) {
+   .toggle-button {
+   	display: flex;
+   }
 }
