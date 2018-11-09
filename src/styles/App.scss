@@ -1,48 +1,80 @@
-.App {
-  text-align: left;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  /*animation: App-logo-spin infinite 20s linear;*/
-  height: 80px;
-}
+html, body {
+    margin: 0px;
+    padding: 0px;
+} 
 
-.App-red-logo {
-  float:right;
-}
 
-.App-header {
-  background-color: #222;
-  height: 230px;
-  padding: 20px;
+
+
+
+
+
+.App-footer {
+  text-align: center;
+  background-color: black;
   color: white;
+  border-top: 2px solid red;
+  padding-bottom: 50px;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
+.homepage{
   text-align:center;
-  padding-top: 20px;
 }
 
-.App-links {
-  text-decoration: none;
-  color:white;
-  padding-right: 30px;
+.container {
+  width: 45%;
+  margin: 0 auto;
+}
+ @media only screen and (max-width: 600px) {
+  .container {
+  width: 80%;
+  margin: 0 auto;
+}
+  }
+.homepage-hero{
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.homepage-features {
+  background-color: white;
+  color: black;
+}
+.homepage-steps{
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+}
+.homepage-steps h1 {
+  margin: 0;
+  text-align: left;
+  margin-top: -20px;
+}
+.homepage-steps p {
+  color: black;
   font-size: 20px;
 }
+.box {
+  background-color:white;
+  color: red;
+  font-size: 90px;
+  font-weight: bold;
+  width: 200px;
+  height: 400px;
+  display:inline-block;
+  border: 2px solid black;
+  margin-bottom: 40px;
 
-.home-parent {
-  text-align:center ;
-  padding: 0px 20px;
 }
 
-.home-middle {
-
-}
-li {
+/*li {
   margin: 0 auto;
   text-align:center;
   padding: 20px;
@@ -57,7 +89,7 @@ li:nth-child(odd){
 }
 li:nth-child(even){
   background: lightgreen;
-}
+}*/
 
 
 
@@ -95,10 +127,6 @@ circle {
   text-align:center;
 }
 
-html, body {
-    margin: 0px;
-    padding: 0px;
-} 
 
 
 

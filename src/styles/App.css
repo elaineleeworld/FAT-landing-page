@@ -1,50 +1,81 @@
-.App {
-  text-align: left; }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
 
-.App-logo {
-  /*animation: App-logo-spin infinite 20s linear;*/
-  height: 80px; }
+html, body {
+  margin: 0px;
+  padding: 0px; }
 
-.App-red-logo {
-  float: right; }
-
-.App-header {
-  background-color: #222;
-  height: 230px;
-  padding: 20px;
-  color: white; }
-
-.App-title {
-  font-size: 1.5em; }
-
-.App-intro {
+.App-footer {
   text-align: center;
-  padding-top: 20px; }
-
-.App-links {
-  text-decoration: none;
+  background-color: black;
   color: white;
-  padding-right: 30px;
+  border-top: 2px solid red;
+  padding-bottom: 50px; }
+
+.homepage {
+  text-align: center; }
+
+.container {
+  width: 45%;
+  margin: 0 auto; }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 80%;
+    margin: 0 auto; } }
+
+.homepage-hero {
+  background-color: black;
+  color: white;
+  padding: 20px 0; }
+
+.homepage-features {
+  background-color: white;
+  color: black; }
+
+.homepage-steps {
+  background-color: black;
+  color: white;
+  padding: 20px 0; }
+
+.homepage-steps h1 {
+  margin: 0;
+  text-align: left;
+  margin-top: -20px; }
+
+.homepage-steps p {
+  color: black;
   font-size: 20px; }
 
-.home-parent {
-  text-align: center;
-  padding: 0px 20px; }
+.box {
+  background-color: white;
+  color: red;
+  font-size: 90px;
+  font-weight: bold;
+  width: 200px;
+  height: 400px;
+  display: inline-block;
+  border: 2px solid black;
+  margin-bottom: 40px; }
 
-li {
+/*li {
   margin: 0 auto;
-  text-align: center;
+  text-align:center;
   padding: 20px;
   border: 2px solid grey;
   display: inline-block;
-  width: 180px; }
+  width: 180px;
 
-li:nth-child(odd) {
-  background: yellow; }
+}
 
-li:nth-child(even) {
-  background: lightgreen; }
-
+li:nth-child(odd){
+  background: yellow;
+}
+li:nth-child(even){
+  background: lightgreen;
+}*/
 .showcase-parent {
   text-align: center; }
 
@@ -71,7 +102,3 @@ circle {
 
 .features-container {
   text-align: center; }
-
-html, body {
-  margin: 0px;
-  padding: 0px; }

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './styles/App.css';
-import Header from './components/Header.js';
+import NavBar from './components/NavBar/NavBar.js';
 import Main from './components/Main.js';
+import Footer from './components/Footer/Footer.js';
 
 
 
@@ -9,8 +10,9 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header/>
+        <NavBar/>
         <Main/>
+        <Footer/>
       </div>
     );
   }

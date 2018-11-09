@@ -3,12 +3,14 @@ import Button from 'react-button-component';
 
 
 const CustomizedButton = Button.extend`
-  color: #000;
+  color: #fff;
   font-weight: bold;
   min-height: 20px !important;
-  border: 2ps solid grey;
-  border-radius: 5px;
-  background: linear-gradient(70deg, #31c831, #31c831);
+  border: 2px solid red;
+  border-radius: 1px;
+  background: black;
+  padding: 5px 5px;
+  margin-bottom: 20px;
 `
 
 
@@ -19,7 +21,7 @@ class DownloadButton extends Component {
 			<div className="App-button">
 			<a href="https://github.com/ff0000-ad-tech/tmpl-standard-base" target="_blank" rel="noopener noreferrer">
 		        <CustomizedButton>
-		          Download Template Here to Get Started
+		          GET STARTED
 		        </CustomizedButton>
 		        </a>
 		     </div>
