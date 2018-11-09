@@ -1,25 +1,31 @@
 import React, {Component} from 'react';
 import './NavBar.css';
+import HamburgerButton from '../Hamburger/HamburgerButton';
 import red_logo from '../../images/red_logo.png'
 import { Link } from 'react-router-dom';
 
 
 const NavBar = props => (
 	<header className='navbar'>
-		<nav className='navbar__navigation'>
-			<div></div>
-			<div className='navbar__logo'>
+		<nav className='navbar__container'>
+		
+			<div className='navbar__container-logo'>
 			<a href='http://www.wearered.com' target="_blank" rel="noopener noreferrer">
 				<img src={red_logo} className="red-logo" alt="red_logo" />
 			</a>
 			</div>
-			<div className='navbar__navigation-items'>
+
+			<div className='spacer'></div>
+			<div className='navbar__container-items'>
 				<ul>
 					<li><Link to='/'>Home</Link></li>
 					<li><Link to='/features'>Features</Link></li>
 					<li><Link to='/showcase'>Showcase</Link></li>
 				</ul>
 			</div>
+			<div className='hamburger'>
+		          	<HamburgerButton click={props.hamburgerToggleClickHandler}/>
+		    </div>
 		</nav>
 	</header>
 
