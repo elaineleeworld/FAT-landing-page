@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import DownloadButton from '../styledComponents/DownloadButton.js';
+import { Grid } from 'react-flexbox-grid';
+import Feature from '../components/Feature/Feature.js';
 
 
 
@@ -20,11 +22,17 @@ const Home = () => (
 	  </div>
 
 	  <div className='homepage-features'>
-	  	 <div className='container'>
-	  	<div> <p>NPM</p></div>
-	  	<div> <p>GITHUB</p></div>
-	  	<div> <p>WEBPACK</p></div>
-	  	</div>
+	  	 <Grid fluid style={{ width: '60%', margin: '0 auto'}}>
+	  	 	<Feature/>
+	  	 	<Feature/>
+	  	 	<Feature/>
+	  	 	<Feature/>
+	  	 	<Feature/>
+	  	 	<Feature/>
+	  	 	<Feature/>
+	  	 	<Feature/>
+	  	 	<Feature/>
+	  	 </Grid>
 	  </div>
 
 	  <div className='homepage-steps'>
