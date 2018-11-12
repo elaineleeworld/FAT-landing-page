@@ -22,7 +22,7 @@ const Home = () => (
 	  </div>
 
 	  <div className='homepage-features'>
-	  	 <Grid fluid style={{ width: '60%', margin: '0 auto'}}>
+	  	 <Grid fluid style={{ width: '80%', margin: '0 auto', padding: '20px'}}>
 	  	 	<Feature/>
 	  	 	<Feature/>
 	  	 	<Feature/>

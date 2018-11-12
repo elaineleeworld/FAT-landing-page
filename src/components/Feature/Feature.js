@@ -7,13 +7,13 @@ import './Feature.css';
 const Feature = () => {
     return (
         <Row className="feature">
-            <Col xs={12} sm={3} first="xs" last="sm">
+            <Col xs={12} first="xs" last="sm">
                 <Hero />
             </Col>
-            <Col xs={12} sm={9}>
+            <Col xs={12}>
                 <Row between="lg">
                    
-                    <Col xs={12} sm={4} lg={3}>
+                    <Col xs={12}>
                         <Field />
                     </Col>
                 </Row>

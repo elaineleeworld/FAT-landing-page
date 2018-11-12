@@ -1,16 +1,17 @@
 .hero {
-    background-color: #5a5a5a;
+    
     min-height: 100px;
     min-width: 100px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
+    background-image: url(../../images/red_logo.png);
     display: inline-block;
 
 }
 
-@media only screen and (max-width: 600px){
+/*@media only screen and (max-width: 600px){
 	.hero{
 		display: flex;
 		align-items: center;
 		margin: 0 auto;
 	}
-}
+}*/

@@ -2,18 +2,31 @@
     width: 80px;
     height: 10px;
     margin-bottom: .5em;
-    background-color: #5a5a5a;
+    /*background-color: #5a5a5a;*/
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .text {
-    width: 120px;
+    width: 300px;
     height: 15px;
-    background-color: #bfbfbf;
+    /*background-color: #bfbfbf;*/
+    margin: 0 auto;
 }
 
 .field {
     margin-bottom: 2em;
-    margin: 1em;
-    text-align: left;
+    /*margin: 1em;*/
+    /*text-align: center;
     display: inline-block;
+    margin: 0 auto;*/
+    /*background-color: blue;*/
+    /*width: 33%;*/
+}
+
+@media only screen and (max-width: 600px){
+    .text {
+        width: 100%;
+        padding-bottom: 70px;
+    }
 }
