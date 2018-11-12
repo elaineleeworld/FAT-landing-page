@@ -6,6 +6,27 @@ import Feature from '../components/Feature/Feature.js';
 
 
 const Home = () => (
+
+	 // render(){
+  //       const myFeatures = [
+  //           {
+  //           label: 'Approachable',
+  //           text: 'Javascript is more powerful than platform solutions. Better packaging / load-optimization. Integrates with existing systems / future-proof.'
+  //           },
+  //           {
+  //           label: 'Open-source',
+  //           text: 'Benefits from standards. Source code is often shared between regions. No competitive edge in tooling. Version-control improves stability.'
+  //           },
+  //           {
+  //           label: 'Modular',
+  //           text: 'Benefits from standards. Source code is often shared between regions. No competitive edge in tooling. Version-control improves stability.'
+  //           },
+  //           {
+  //           label: 'GSAP',
+  //           text: 'Greensock Animation Platform has been an industry-standard for over a decade. Efficient & powerful animation framework.  Ubiquitously cached and usually dismissed against k-size.'
+  //           }
+  //       ]
+  //   };
 	<div className='homepage'>
 
 	  <div className='homepage-hero'>
