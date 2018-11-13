@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import DownloadButton from '../styledComponents/DownloadButton.js';
 import { Grid } from 'react-flexbox-grid';
-import Feature from '../components/Feature/Feature.js';
+import FeatureList from '../components/Feature/FeatureList.js';
 
 
 
@@ -43,16 +43,8 @@ const Home = () => (
 	  </div>
 
 	  <div className='homepage-features'>
-	  	 <Grid fluid style={{ width: '80%', margin: '0 auto', padding: '20px'}}>
-	  	 	<Feature/>
-	  	 	<Feature/>
-	  	 	<Feature/>
-	  	 	<Feature/>
-	  	 	<Feature/>
-	  	 	<Feature/>
-	  	 	<Feature/>
-	  	 	<Feature/>
-	  	 	<Feature/>
+	  	 <Grid fluid style={{ width: '85%', margin: '0 auto', padding: '20px'}}>
+	  	 	<FeatureList/>
 	  	 </Grid>
 	  </div>
 
