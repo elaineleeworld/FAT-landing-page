@@ -29,10 +29,10 @@ html, body {
   text-align:center;
 }
 
-.container {
+/*.container {
   width: 45%;
   margin: 0 auto;
-}
+}*/
 /* @media only screen and (min-width: 768px) {
   .container {
   width: 616px;
@@ -50,6 +50,9 @@ html, body {
   color: white;
   padding: 20px 0;
 }
+.homepage-hero h2{
+  color:white;
+}
 
 .homepage-features {
   background-color: white;
@@ -60,6 +63,9 @@ html, body {
   background-color: black;
   color: white;
   padding: 20px 0;
+}
+.homepage-steps .container {
+  width: auto;
 }
 /*.homepage-steps h1 {
   margin: 0;

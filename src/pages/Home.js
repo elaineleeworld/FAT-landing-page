@@ -3,6 +3,7 @@ import DownloadButton from '../styledComponents/DownloadButton.js';
 import { Grid } from 'react-flexbox-grid';
 import FeatureList from '../components/Feature/FeatureList.js';
 import Box from '../components/Box/Box.js';
+import Client from '../components/Client/Client.js';
 
 
 
@@ -61,8 +62,9 @@ const Home = () => (
 	  <div className='homepage-clients'>
 	   <div className='container'>
 	  <h2>Clients that have used our framework.</h2>
+	  <Client/>
 	  </div>
-
+	  	
 	  </div> 
 
    </div> // end of homepage

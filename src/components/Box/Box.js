@@ -4,20 +4,6 @@ import { Row, Col } from 'react-flexbox-grid';
 import './Box.css';
 
 
-
-
-
-        //  function FeaturesList( {features} ){
-        //     return features.map(feature => (
-
-        //         <div>
-        //         <h3>{feature.label}</h3>
-        //         <p>{feature.text}</p>
-        //         </div>
-        //         ))
-        //     // console.log('FEATURES', features)
-        // }
-
 class Box extends React.Component {
     constructor(props){
         super(props);
