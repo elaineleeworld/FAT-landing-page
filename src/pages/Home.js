@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import DownloadButton from '../styledComponents/DownloadButton.js';
 import { Grid } from 'react-flexbox-grid';
 import FeatureList from '../components/Feature/FeatureList.js';
+import Box from '../components/Box/Box.js';
 
 
 
@@ -50,16 +51,8 @@ const Home = () => (
 
 	  <div className='homepage-steps'>
 		  <div className='container'>
-		  	<h2>4 easy steps to get started.</h2>
-		  	<div className='box'> <h1>1</h1>
-		  	{/*<p>Start with a standard DCM template.</p>*/}
-		  	</div>
-		  	<div className='box'> <h1>2</h1>
-		  	</div>
-		  	<div className='box'> <h1>3</h1>
-		  	</div>
-		  	<div className='box'> <h1>4</h1>
-		  	</div>
+		  	<h1>4 easy steps to get started.</h1>
+		  	<Box />
 
 		  	<DownloadButton/>
 	  	</div>

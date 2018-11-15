@@ -1,0 +1,64 @@
+h1 {
+	color: white;
+	padding-bottom: 20px;
+}
+
+h2, h3{
+	color:black;
+}
+
+
+.box-container{
+	padding-bottom: 50px;
+}
+.box {
+    background: white;
+    display:inline-block;
+    border-bottom: 3px solid red;
+    height: 500px;
+    margin: 3px;
+    /*margin: 0 auto;*/
+   
+}
+
+
+.box-number {
+	color: red;
+	font-size: 150px;
+	margin: 0;
+    text-align: left;
+    margin-left: -3px;
+  	margin-top: -30px;
+}
+ 
+.box-label {
+	color: black;
+	font-size: 16px;
+	margin-top: -90px;
+
+
+}
+.vertical-text {
+	transform: rotate(90deg);
+}
+
+.box-headline {
+	color: black;
+	font-size: 25px;
+	padding-top: 60px;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.box-subheadline{
+	color: black;
+	font-size: 12px;
+	margin-top: -20px;
+}
+.box-text {
+	color: black;
+	font-size: 18px;
+	padding: 30px 10px;
+	text-align:left;
+}

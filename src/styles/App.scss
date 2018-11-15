@@ -33,12 +33,18 @@ html, body {
   width: 45%;
   margin: 0 auto;
 }
- @media only screen and (max-width: 600px) {
+/* @media only screen and (min-width: 768px) {
+  .container {
+  width: 616px;
+  margin: 0 auto;
+}
+  }
+@media only screen and (max-width: 600px) {
   .container {
   width: 80%;
   margin: 0 auto;
 }
-  }
+  }*/
 .homepage-hero{
   background-color: black;
   color: white;
@@ -55,7 +61,7 @@ html, body {
   color: white;
   padding: 20px 0;
 }
-.homepage-steps h1 {
+/*.homepage-steps h1 {
   margin: 0;
   text-align: left;
   margin-top: -20px;
@@ -63,7 +69,8 @@ html, body {
 .homepage-steps p {
   color: black;
   font-size: 20px;
-}
+}*/
+
 .box {
   background-color:white;
   color: red;
@@ -74,8 +81,9 @@ html, body {
   display:inline-block;
   border: 2px solid black;
   margin-bottom: 40px;
-
 }
+
+
 
 /*li {
   margin: 0 auto;
