@@ -13,5 +13,9 @@
 	.homepage-client-container{
 		width: 100%;
 	}
+
+	.client {
+		padding: 30px;
+	}
 }
 

@@ -34,12 +34,12 @@ const Home = () => (
 	  <div className='homepage-hero'>
 	  	 <div className='container'>
 	    <h2>Faster development so you can focus on creative execution.</h2>
-	    <p>Our lightweight Javascript framework enables custom, high-quality, high-volume production of banner ads -- create many variations and many sizes efficiently. Easily migrate them to any ad-network.
+	    <p className='hero-text-one'>A super-lightweight, easy-to-use (and also developer-friendly) framework is crucial for delivering fresh creative into programmatic buys that include hundreds of targets across many sizes and devices.
 		</p>
 	
-		<p>The result is the smallest, most capable, fastest-loading ads in the industry.</p>
+		<p className='hero-text-two'>The result is the smallest, most capable, fastest-loading ads in the industry.</p>
 	  
-	    <p>We provide common out-of-the box components (dates, video player, buttons) and enable you to manage dynamic states simply.</p>
+	    
 	  <DownloadButton/>
 	  </div>
 	  </div>

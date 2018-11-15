@@ -21,12 +21,21 @@ html, body {
   text-align: center;
   background-color: black;
   color: white;
-  border-top: 2px solid red;
+  border-top: 3px solid red;
   padding-bottom: 50px;
 }
 
 .homepage{
   text-align:center;
+}
+
+.hero-text-one{
+  color: grey;
+  font-size: 15px;
+}
+.hero-text-two{
+  color:grey;
+  font-size: 19px;
 }
 
 /*.container {
@@ -49,6 +58,7 @@ html, body {
   background-color: black;
   color: white;
   padding: 20px 0;
+  border-bottom: 3px solid red;
 }
 .homepage-hero h2{
   color:white;
