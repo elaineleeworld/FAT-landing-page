@@ -2,7 +2,6 @@
   "name": "landing",
   "version": "0.1.0",
   "private": true,
-  // "homepage": "https://ff0000-ad-tech.github.io/fat-landing-page/",
   "homepage": " https://theelainelee.github.io/FAT-landing-page/",
   "dependencies": {
     "node-sass-chokidar": "^1.3.0",
