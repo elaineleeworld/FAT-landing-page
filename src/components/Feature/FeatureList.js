@@ -30,21 +30,6 @@ class FeatureList extends React.Component {
         const myFeature = [
             {
             img: require('../../images/red_logo.png'),
-            label: 'Approachable',
-            text: 'Javascript is more powerful than platform solutions. Better packaging / load-optimization. Integrates with existing systems / future-proof.'
-            },
-            {
-            img: require('../../images/red_logo.png'),
-            label: 'Open-source',
-            text: 'Benefits from standards. Source code is often shared between regions. No competitive edge in tooling. Version-control improves stability.'
-            },
-            {
-            img: require('../../images/red_logo.png'),
-            label: 'Modular',
-            text: 'Benefits from standards. Source code is often shared between regions. No competitive edge in tooling. Version-control improves stability.'
-            },
-            {
-            img: require('../../images/red_logo.png'),
             label: 'GSAP',
             text: 'Greensock Animation Platform has been an industry-standard for over a decade. Efficient & powerful animation framework.  Ubiquitously cached and usually dismissed against k-size.'
             },

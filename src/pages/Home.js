@@ -2,10 +2,14 @@ import React, { Component } from 'react';
 import DownloadButton from '../styledComponents/DownloadButton.js';
 import { Grid } from 'react-flexbox-grid';
 import FeatureList from '../components/Feature/FeatureList.js';
+import TopFeatures from '../components/TopFeatures/TopFeatures.js';
 import Box from '../components/Box/Box.js';
 import Client from '../components/Client/Client.js';
+import Collapsible from 'react-collapsible';
+import Arrow from '../images/red_arrow.png'
 
 
+console.log("ARROW", Arrow)
 
 const Home = () => (
 
@@ -43,13 +47,19 @@ const Home = () => (
 	  <DownloadButton/>
 	  </div>
 	  </div>
-
+	  
 	  <div className='homepage-features'>
+	  <TopFeatures/>
+	  <Collapsible trigger={<img src={Arrow} className='red-arrow' alt='red arrow'/>}>
+	   
 	  	 <Grid fluid style={{ width: '85%', margin: '0 auto', padding: '20px'}}>
 	  	 	<FeatureList/>
 	  	 </Grid>
+	  	 
+	  	
+	  	  </Collapsible>
 	  </div>
-
+	 
 	  <div className='homepage-steps'>
 		  <div className='container'>
 		  	<h1>4 easy steps to get started.</h1>
