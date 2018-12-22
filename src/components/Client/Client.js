@@ -13,21 +13,21 @@ class Client extends React.Component {
     render(){
 
         const myClient = [
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')},
-            {img: require('../../images/red_logo.png')}
+            {img: require('../../images/Netflix.png')},
+            {img: require('../../images/Disney.png')},
+            {img: require('../../images/AMC.png')},
+            {img: require('../../images/ESPN.png')},
+            {img: require('../../images/Hulu.png')},
+            {img: require('../../images/Samsung.png')},
+            {img: require('../../images/Bud.png')},
+            {img: require('../../images/Nick.png')},
+            {img: require('../../images/UA.png')},
+            {img: require('../../images/Paramount.png')},
+            {img: require('../../images/Nike.png')},
+            {img: require('../../images/Mich.png')},
+            {img: require('../../images/Livenation.png')},
+            {img: require('../../images/abc.png')},
+            {img: require('../../images/Fox.png')}
            
         ]
     return (
