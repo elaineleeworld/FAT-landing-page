@@ -29,18 +29,21 @@ class TopFeatures extends React.Component {
 
         const myFeature = [
             {
-            img: require('../../images/red_logo.png'),
-            label: 'Approachable',
+            img: require('../../images/Webpack.png'),
+            label: 'Easy ES6/WEBPACK',
+            headline: 'CODE IS POWERFUL',
             text: 'Javascript is more powerful than platform solutions. Better packaging / load-optimization. Integrates with existing systems / future-proof.'
             },
             {
-            img: require('../../images/red_logo.png'),
-            label: 'Open-source',
+            img: require('../../images/GithubNPM.png'),
+            label: 'Open-Source',
+            headline: 'JOIN THE COMMUNITY',
             text: 'Benefits from standards. Source code is often shared between regions. No competitive edge in tooling. Version-control improves stability.'
             },
             {
-            img: require('../../images/red_logo.png'),
+            img: require('../../images/Modular.png'),
             label: 'Modular',
+            headline: 'USE EXISTING COMPONENTS',
             text: 'Benefits from standards. Source code is often shared between regions. No competitive edge in tooling. Version-control improves stability.'
             }
         ]
@@ -57,7 +60,8 @@ class TopFeatures extends React.Component {
                 <Row between="lg">
                    
                     <Col xs={12}>
-                      <h3 >{feature.label}</h3>
+                      <h2>{feature.label}</h2>
+                        <h3>{feature.headline}</h3>
                         <p>{feature.text}</p>
                     </Col>
                 </Row>
