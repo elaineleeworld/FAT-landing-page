@@ -1,49 +1,37 @@
 import React, { Component } from 'react';
 import DownloadButton from '../styledComponents/DownloadButton.js';
 import { Grid } from 'react-flexbox-grid';
+import BracketsList from '../components/Hero/Hero.js';
 import FeatureList from '../components/Feature/FeatureList.js';
 import TopFeatures from '../components/TopFeatures/TopFeatures.js';
 import Box from '../components/Box/Box.js';
 import Client from '../components/Client/Client.js';
 import Collapsible from 'react-collapsible';
 import Arrow from '../images/red_arrow.png'
+import BG from '../images/bg_image_top.jpg'
+import PlusSign from '../images/plus-sign.png'
+
+
+import SharpGroteskMedium24 from '../fonts/SharpGroteskMedium24.otf'
+import RubikLight from '../fonts/Rubik-Light.ttf'
+
 
 
 console.log("ARROW", Arrow)
 
 const Home = () => (
 
-	 // render(){
-  //       const myFeatures = [
-  //           {
-  //           label: 'Approachable',
-  //           text: 'Javascript is more powerful than platform solutions. Better packaging / load-optimization. Integrates with existing systems / future-proof.'
-  //           },
-  //           {
-  //           label: 'Open-source',
-  //           text: 'Benefits from standards. Source code is often shared between regions. No competitive edge in tooling. Version-control improves stability.'
-  //           },
-  //           {
-  //           label: 'Modular',
-  //           text: 'Benefits from standards. Source code is often shared between regions. No competitive edge in tooling. Version-control improves stability.'
-  //           },
-  //           {
-  //           label: 'GSAP',
-  //           text: 'Greensock Animation Platform has been an industry-standard for over a decade. Efficient & powerful animation framework.  Ubiquitously cached and usually dismissed against k-size.'
-  //           }
-  //       ]
-  //   };
+
 	<div className='homepage'>
 
 	  <div className='homepage-hero'>
 	  	 <div className='container'>
-	    <h2>Faster development so you can focus on creative execution.</h2>
-	    <p className='hero-text-one'>A super-lightweight, easy-to-use (and also developer-friendly) framework is crucial for delivering fresh creative into programmatic buys that include hundreds of targets across many sizes and devices.
-		</p>
-	
-		<p className='hero-text-two'>The result is the smallest, most capable, fastest-loading ads in the industry.</p>
-	  
-	    
+	    <p className='hero-headline'>Light-weight, open-source, ES6</p>
+	    <p className='hero-text-one'>AD DEVELOPMENT</p>
+		<p className='hero-text-two'>Author the best creative. Deliver big programmatic buys: <br/>Hundreds of targets, many sizes, and many devices.</p>
+		<BracketsList/>
+			<img src={PlusSign} className="plus-sign" alt="plus-sign" />
+		
 	  <DownloadButton/>
 	  </div>
 	  </div>

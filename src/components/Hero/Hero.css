@@ -1,0 +1,26 @@
+
+.container {
+	width: 70%;
+}
+.bracket img{
+	position: relative;
+	padding: 50px;
+
+}
+img {
+	margin-bottom: 30px;
+}
+
+.bracket-text {
+	position: absolute;
+    /*left: 50%;*/
+    transform: translate(30%, -0%);
+    width: 15%;
+    /*margin-top: 40px;*/
+}
+.brackets-list {
+	width: 50%;
+	display:inline-block;
+
+}
+

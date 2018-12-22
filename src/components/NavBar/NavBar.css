@@ -1,3 +1,10 @@
+@font-face{
+	font-family: 'Gotham-Light';
+	src: local('Gotham-Light'), url(../../fonts/Gotham-Light.ttf) format('ttf');
+}
+
+
+
 .navbar {
   background-color: white;
   /*width: 100%;*/
@@ -28,12 +35,38 @@
 	display: flex;
 	align-items: center;
 	height: 100%;
-	width: 50%;
+	width: 60%;
 	margin: 0 auto;
 }
 
-.navbar__container-logo{
-  
+.navbar__container-logo a{
+  text-decoration: none;
+  color: black;
+
+
+}
+
+.navbar__container-logo {
+	 vertical-align: top;
+}
+
+
+.red-logo{
+	margin: -2px;
+}
+.vertical-divider{
+	width: 0px;
+	height: 30px;
+	border: 1px solid red;
+	margin: 0 15px;
+	display: inline-block;
+	
+}
+.red-ad-tech {
+	font-size: 30px;
+	margin: 0 auto;
+	display: inline-block;
+	font-family: 'Gotham-Light';
 }
 
 .spacer {
@@ -43,7 +76,7 @@
 .navbar__container-items a{
 	color:black;
 	/*padding-right: 20px;*/
-	font-size: 20px;
+	font-size: 15px;
 	text-decoration: none;
 }
 
@@ -55,6 +88,8 @@
 }
 .navbar__container-items li {
 	padding-right: 20px;
+	font-family: 'Rubik-Regular';
+	
 }
 
 .navbar__container-items a:hover {

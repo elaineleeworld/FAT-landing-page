@@ -11,6 +11,10 @@ const CustomizedButton = Button.extend`
   background: black;
   padding: 5px 5px;
   margin-bottom: 20px;
+
+  :hover {
+  	color: #000;
+  }
 `
 
 
