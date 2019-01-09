@@ -50,7 +50,7 @@ const Home = () => (
 	 
 	  <div className='homepage-steps'>
 		  <div className='container'>
-		  	<h1>4 easy steps to get started.</h1>
+		  	<h1 className='headline-style-steps'>4 EASY STEPS TO GET STARTED</h1>
 		  	<Box />
 
 		  	<DownloadButton/>
@@ -59,7 +59,7 @@ const Home = () => (
 
 	  <div className='homepage-clients'>
 	   <div className='container'>
-	  <h2>Clients that have used our framework.</h2>
+	  <h2 className='headline-style-clients'>POWERED BY RED AD TECH</h2>
 	  <Client/>
 	  </div>
 	  	

@@ -1,19 +1,13 @@
 import React, {Component} from 'react';
 import Button from 'react-button-component';
+import cta from '../images/cta.png'
 
 
 const CustomizedButton = Button.extend`
-  color: #fff;
-  font-weight: bold;
-  min-height: 20px !important;
-  border: 2px solid red;
-  border-radius: 1px;
-  background: black;
-  padding: 5px 5px;
-  margin-bottom: 20px;
+  background: url("./../images/cta.png");
 
   :hover {
-  	color: #000;
+  	background-color: #ff0000;
   }
 `
 
@@ -24,9 +18,9 @@ class DownloadButton extends Component {
 		return(
 			<div className="App-button">
 			<a href="https://github.com/ff0000-ad-tech/tmpl-standard-base" target="_blank" rel="noopener noreferrer">
-		        <CustomizedButton>
-		          GET STARTED
-		        </CustomizedButton>
+		       
+		       <img src={cta} className="cta" alt="cta" />
+		       
 		        </a>
 		     </div>
 			);

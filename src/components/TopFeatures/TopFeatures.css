@@ -22,3 +22,10 @@
         width: 100%;
 	}
 }
+
+h2 {
+    font-family: 'SharpGroteskMedium24';
+    font-size: 36px;
+    letter-spacing: 6px;
+
+}
