@@ -29,32 +29,32 @@ class FeatureList extends React.Component {
 
         const myFeature = [
             {
-            img: require('../../images/red_logo.png'),
+            img: require('../../images/GASP.png'),
             label: 'GSAP',
             text: 'Greensock Animation Platform has been an industry-standard for over a decade. Efficient & powerful animation framework.  Ubiquitously cached and usually dismissed against k-size.'
             },
             {
-            img: require('../../images/red_logo.png'),
+            img: require('../../images/BINARY.png'),
             label: 'Binary Compiling',
             text: 'Images & fonts are packaged as a single payload. Base64 + gzip adds bloat. Fewer network requests = faster load. Zero configuration. Just import your assets.  FAT handles the packaging.'    
             },
             {
-            img: require('../../images/red_logo.png'),
+            img: require('../../images/IAB.png'),
             label: 'IAB Specs',
             text: 'FAT is designed for IAB. 30k boilerplate. The rest is for creative. Fast-to-load. Only 2 payload requests (text & binary). All components are designed for banners.'    
             },
             {
-            img: require('../../images/red_logo.png'),
+            img: require('../../images/DYNAMIC.png'),
             label: 'Dynamic',
             text: 'Easily build dynamic units for programmatic markets. Reduced code/asset redundancy across versions/sizes. Smart auto-fitting text, alignment, element-positioning utilities.'
             }, 
             {
-            img: require('../../images/red_logo.png'),
+            img: require('../../images/SCALE.png'),
             label: 'Scale vs Scare',
             text: 'Users can decide their sweet-spot of complexity.  Zero-code redundancy using dynamic programming concepts. Simplicity: Hard-coded creative per size.'
             },
             {
-            img: require('../../images/red_logo.png'),
+            img: require('../../images/STANDARDIZED.png'),
             label: 'Standardized & Flexible',
             text: "Resource scheduling is easy with consistent patterns. Everybody can work with everybody's files. Capabilities are not compromised."
             }

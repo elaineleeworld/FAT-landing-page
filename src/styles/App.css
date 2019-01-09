@@ -82,7 +82,7 @@ html, body {
   color: black; }
 
 .homepage-steps {
-  background-color: black;
+  background: url("../images/stepsBG.png");
   color: white;
   padding: 20px 0; }
 
