@@ -109,9 +109,12 @@ html, body {
   justify-content: center; }
 
 .homepage-peeps {
-  background: url("../images/peeps.png");
+  background-image: url("../images/peeps.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 0;
+  width: 100%;
+  padding-top: 50%; }
 
 .download-container {
   width: 50%;

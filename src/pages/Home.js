@@ -118,7 +118,7 @@ class Home extends React.Component{
 	   <div className='homepage-peeps'>
 	  	<div className='container'>
 	  	
-		       <img src={Peeps} className="red-employees" alt="red employees" />
+		      
 		       
 	  	</div>
 	  
