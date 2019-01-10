@@ -1,0 +1,7 @@
+
+.App-footer{
+	background: url('../../images/footer_bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+}

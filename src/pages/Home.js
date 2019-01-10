@@ -116,12 +116,9 @@ class Home extends React.Component{
 	  </div> 
 
 	   <div className='homepage-peeps'>
-	   <div className='peeps-headline'>
-	    			<p>ABOUT RED</p>
-	    		</div>
-	  	<div className='container'>
-	    		
-	  	</div>
+
+	   
+		    <p className='peeps-headline'>ABOUT RED</p>
 	  </div> 
 	  <div className='homepage-about'>
 	  	<div className='container'>

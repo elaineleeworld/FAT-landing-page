@@ -12,20 +12,6 @@ html, body {
 } 
 
 
-.red-arrow {
-  width: 50px;
-  height: 50px;
-}
-
-
-
-.App-footer {
-  text-align: center;
-  background-color: black;
-  color: white;
-  border-top: 3px solid red;
-  padding-bottom: 50px;
-}
 
 .homepage{
   text-align:center;
@@ -128,25 +114,31 @@ html, body {
 .homepage-peeps{
   background-image: url('../images/peeps.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   height: 0;
   width: 100%;
   padding-top: 60%;
+
+
 }
 
 .peeps-headline{
-    height: 100px;
+position: relative;
+top: -300px;
+left: 600px;
+    height: 80px;
     background-color: white;
     width: 70%;
-    margin-left: 700px;
-    margin-top: -300px;
     color: #000;
     text-align: left;
     font-size: 36px;
     font-family: 'SharpGroteskMedium24';
 }
 
-.peeps-headline p {
+p.peeps-headline {
       padding-top: 25px;
     padding-left: 45px;
 }
