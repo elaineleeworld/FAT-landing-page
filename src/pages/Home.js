@@ -27,7 +27,7 @@ class Home extends React.Component{
 		super(props)
 		this.state = { 
 			open: true,
-			hideArrow: false
+			hideElement: false
 		}
 	}
 	collapseFeatures(){
@@ -35,16 +35,21 @@ class Home extends React.Component{
 	this.setState((prevState,props) => ({
 		open: !this.state.open,
 		
-	}))
-}
-	hideArrow(){
+		}))
+	}
+	hideElement(){
 		this.setState((prevState,props) =>({
-			hideArrow: !this.state.hideArrow
+			hideElement: !this.state.hideElement
+		}))
+	}
+	toggleImage(){
+		this.setState((prevState,props) =>({
+
 		}))
 	}
 	render(){
 
-		const style = this.state.hideArrow ? { visibility: 'hidden'} : {};
+		const style = this.state.hideElement ? { display: 'none'} : {};
 
 		return(
 
@@ -64,14 +69,14 @@ class Home extends React.Component{
 	  
 	  <div className='homepage-features'>
 	  <TopFeatures/>
-	  <Collapsible trigger={<img src={MoreArrow} onClick={this.hideArrow.bind(this)} style={style} className='more-red-arrow' alt='more red arrow'/>}>
+	  <Collapsible trigger={<img src={MoreArrow} onClick={this.hideElement.bind(this)} style={style} className='more-red-arrow' alt='more red arrow'/>}>
 	   
 	  	 <Grid fluid style={{ width: '85%', margin: '0 auto', padding: '20px'}}>
 	  	 	<FeatureList/>
 	  	 </Grid>
 	  	 
-	  <img src={LessArrow} onClick={this.collapseFeatures.bind(this)} className='red-arrow-less' alt='red arrow less'/>}>
-	   {this.state.open ? null : <TopFeatures/>}
+	  <img src={LessArrow} onClick={this.collapseFeatures.bind(this)}  className='red-arrow-less' alt='red arrow less'/>
+	  {this.state.open ? null : <img src={MoreArrow}/>} 
 	  	 
 	  	  </Collapsible>
 	  	   

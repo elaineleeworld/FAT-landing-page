@@ -116,7 +116,9 @@ html, body {
 
 .headline-style-clients {
   color: '#000';
-  font-family: 'SharpGroteskMedium24'; }
+  font-family: 'SharpGroteskMedium24';
+  letter-spacing: 6px;
+  font-size: 36px; }
 
 /*li {
   margin: 0 auto;
