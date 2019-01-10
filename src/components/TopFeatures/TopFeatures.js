@@ -49,7 +49,7 @@ class TopFeatures extends React.Component {
         ]
     return (
          <div>
-            <h2>FEATURES</h2>
+            <h2 className='headline-style-topfeatures'>FEATURES</h2>
       {myFeature.map(function(feature, index){
          return (
           

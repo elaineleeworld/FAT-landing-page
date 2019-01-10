@@ -7,7 +7,8 @@ import TopFeatures from '../components/TopFeatures/TopFeatures.js';
 import Box from '../components/Box/Box.js';
 import Client from '../components/Client/Client.js';
 import Collapsible from 'react-collapsible';
-import Arrow from '../images/red_arrow.png'
+import MoreArrow from '../images/red_arrow_more.png'
+import LessArrow from '../images/red_arrow_less.png'
 import BG from '../images/bg_image_top.jpg'
 import PlusSign from '../images/plus-sign.png'
 
@@ -17,10 +18,35 @@ import RubikLight from '../fonts/Rubik-Light.ttf'
 
 
 
-console.log("ARROW", Arrow)
+console.log("ARROW", MoreArrow)
 
-const Home = () => (
 
+
+class Home extends React.Component{
+	constructor(props){
+		super(props)
+		this.state = { 
+			open: true,
+			hideArrow: false
+		}
+	}
+	collapseFeatures(){
+		console.log("CLICKED")
+	this.setState((prevState,props) => ({
+		open: !this.state.open,
+		
+	}))
+}
+	hideArrow(){
+		this.setState((prevState,props) =>({
+			hideArrow: !this.state.hideArrow
+		}))
+	}
+	render(){
+
+		const style = this.state.hideArrow ? { visibility: 'hidden'} : {};
+
+		return(
 
 	<div className='homepage'>
 
@@ -38,14 +64,17 @@ const Home = () => (
 	  
 	  <div className='homepage-features'>
 	  <TopFeatures/>
-	  <Collapsible trigger={<img src={Arrow} className='red-arrow' alt='red arrow'/>}>
+	  <Collapsible trigger={<img src={MoreArrow} onClick={this.hideArrow.bind(this)} style={style} className='more-red-arrow' alt='more red arrow'/>}>
 	   
 	  	 <Grid fluid style={{ width: '85%', margin: '0 auto', padding: '20px'}}>
 	  	 	<FeatureList/>
 	  	 </Grid>
 	  	 
-	  	
+	  <img src={LessArrow} onClick={this.collapseFeatures.bind(this)} className='red-arrow-less' alt='red arrow less'/>}>
+	   {this.state.open ? null : <TopFeatures/>}
+	  	 
 	  	  </Collapsible>
+	  	   
 	  </div>
 	 
 	  <div className='homepage-steps'>
@@ -67,5 +96,7 @@ const Home = () => (
 
    </div> // end of homepage
 )
+	}
+}
 
 export default Home;
