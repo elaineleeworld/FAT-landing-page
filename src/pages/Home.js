@@ -76,7 +76,7 @@ class Home extends React.Component{
 	  	 </Grid>
 	  	 
 	  <img src={LessArrow} onClick={this.collapseFeatures.bind(this)}  className='red-arrow-less' alt='red arrow less'/>
-	  {this.state.open ? null : <img src={MoreArrow}/>} 
+	 {/* {this.state.open ? null : <img src={MoreArrow}/>}*/ }
 	  	 
 	  	  </Collapsible>
 	  	   
