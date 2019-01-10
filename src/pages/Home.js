@@ -13,6 +13,7 @@ import BG from '../images/bg_image_top.jpg'
 import PlusSign from '../images/plus-sign.png'
 import DownloadTemplate from '../images/download_template.png'
 import BrowseGithub from '../images/browse_github.png'
+import Peeps from '../images/peeps.png'
 
 
 import SharpGroteskMedium24 from '../fonts/SharpGroteskMedium24.otf'
@@ -113,6 +114,15 @@ class Home extends React.Component{
 	  </div>
 	  	
 	  </div> 
+
+	   <div className='homepage-peeps'>
+	  	<div className='container'>
+	  	
+		       <img src={Peeps} className="red-employees" alt="red employees" />
+		       
+	  	</div>
+	  
+	  </div>
 
    </div> // end of homepage
 )
