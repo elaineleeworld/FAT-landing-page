@@ -131,7 +131,24 @@ html, body {
   background-size: cover;
   height: 0;
   width: 100%;
-  padding-top: 50%;
+  padding-top: 60%;
+}
+
+.peeps-headline{
+    height: 100px;
+    background-color: white;
+    width: 70%;
+    margin-left: 700px;
+    margin-top: -300px;
+    color: #000;
+    text-align: left;
+    font-size: 36px;
+    font-family: 'SharpGroteskMedium24';
+}
+
+.peeps-headling p {
+      padding-top: 25px;
+    padding-left: 45px;
 }
 
 .download-container{
@@ -149,6 +166,21 @@ html, body {
    flex-direction: column;
    flex-wrap: wrap;
 }
+}
+
+.homepage-about {
+  height: 400px;
+  width: 70%;
+  text-align:left;
+  margin: 0 auto;
+  padding-top: 40px;
+  color: #000;
+  font-size: 28px;
+  font-family: 'Rubik';
+}
+
+.homepage-about p {
+  color: #000;
 }
 
 .box {

@@ -116,12 +116,19 @@ class Home extends React.Component{
 	  </div> 
 
 	   <div className='homepage-peeps'>
+	   <div className='peeps-headline'>
+	    			<p>ABOUT RED</p>
+	    		</div>
 	  	<div className='container'>
-	  	
-		      
-		       
+	    		
 	  	</div>
-	  
+	  </div> 
+	  <div className='homepage-about'>
+	  	<div className='container'>
+	    	<p>RED has been building display ads for over a decade. We were the first to deliver HTML 5. We innovated dynamic. We license our own CMP, Velvet.</p>
+	    	<br/>
+	    	<p>We believe ads should load fast & look amazing - whether our agency built them, or yours.</p>
+	  	</div>
 	  </div>
 
    </div> // end of homepage
