@@ -11,6 +11,8 @@ import MoreArrow from '../images/red_arrow_more.png'
 import LessArrow from '../images/red_arrow_less.png'
 import BG from '../images/bg_image_top.jpg'
 import PlusSign from '../images/plus-sign.png'
+import DownloadTemplate from '../images/download_template.png'
+import BrowseGithub from '../images/browse_github.png'
 
 
 import SharpGroteskMedium24 from '../fonts/SharpGroteskMedium24.otf'
@@ -88,6 +90,19 @@ class Home extends React.Component{
 		  	<Box />
 
 		  	<DownloadButton/>
+	  	</div>
+	  </div>
+
+	  <div className='homepage-download'>
+	  	<div className='download-container'>
+	  		<a href="https://github.com/ff0000-ad-tech/tmpl-standard-base" target="_blank" rel="noopener noreferrer">
+		       <img src={DownloadTemplate} className="download-template" alt="download template" />
+		        </a>
+	  	</div>
+	  	<div className='browse-container'>
+	  		<a href="https://github.com/ff0000-ad-tech/tmpl-standard-base" target="_blank" rel="noopener noreferrer">
+		       <img src={BrowseGithub} className="browse-github" alt="browse github" />
+		        </a>
 	  	</div>
 	  </div>
 

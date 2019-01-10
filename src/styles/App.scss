@@ -96,6 +96,8 @@ html, body {
 
 .homepage-steps{
   background: url('../images/stepsBG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   padding: 20px 0;
 }
@@ -111,6 +113,34 @@ html, body {
   color: black;
   font-size: 20px;
 }*/
+
+.homepage-download {
+  background-color: #242b3b;
+  height: 170px;
+  border: 0.1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+
+.download-container{
+  width: 50%;
+  border-right: 0.1px solid grey;
+
+
+}
+.browse-container{
+   width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .download-container, .browse-container {
+   flex-direction: column;
+}
+}
 
 .box {
   background-color:white;
