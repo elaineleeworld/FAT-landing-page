@@ -34,14 +34,9 @@ class Client extends React.Component {
          <div className='client-container'>
       {myClient.map(function(client, index){
          return (
-          
-            
-              <Row className="client">
-            <Col xs={12} first="xs" last="sm">
-               <img src={client.img} />
-                </Col>
-             
-             </Row>
+              <div className="client">
+                <img className="client-image" src={client.img} />
+             </div>
             )
        })}
       </div> 
