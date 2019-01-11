@@ -5,7 +5,7 @@
 
 .headline-style-clients{
 	margin-top: 0;
-	padding-top: 50px;
+	padding-top:50px;
 }
 
 .client-container{
@@ -34,7 +34,7 @@
 	justify-content: center;
 	margin: 0 auto;
 	align-content: flex-start;
-	flex: 0 0 calc(50% - 30px);
+	margin: -3px 0px;
 
 }
 .client-image{
