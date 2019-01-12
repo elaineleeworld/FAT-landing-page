@@ -70,8 +70,8 @@ class TopFeatures extends React.Component {
       {myFeature.map(function(feature, index){
          return (
           
-             <Row className="feature">
-            <Col xs={12} first="xs" last="sm">
+             <Row key={index} className="feature">
+            <Col  xs={12} first="xs" last="sm">
                <img src={feature.img} />
                 </Col>
              <Col xs={12}>

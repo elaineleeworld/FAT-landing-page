@@ -84,7 +84,7 @@ class FeatureList extends React.Component {
          return (
           
              <Row className="feature" style={style}>
-            <Col xs={12} first="xs" last="sm">
+            <Col key={index} xs={12} first="xs" last="sm">
                <img src={feature.img} />
                 </Col>
              <Col xs={12}>

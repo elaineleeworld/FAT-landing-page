@@ -46,8 +46,8 @@ class Box extends React.Component {
          return (
           
             
-              <Row className="box">
-            <Col xs={12} first="xs" last="sm">
+              <Row key={index} className="box">
+            <Col  xs={12} first="xs" last="sm">
                <p className='box-number'>{box.number}</p>
                 </Col>
              <Col xs={12}>

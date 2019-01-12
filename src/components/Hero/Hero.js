@@ -41,7 +41,7 @@ class BracketsList extends React.Component {
          return (
           
              
-       <div className='brackets-list'>
+       <div key={index} className='brackets-list'>
         <p className='bracket-text'>{bracket.text}</p>
                <img src={bracket.img} />
                   </div>

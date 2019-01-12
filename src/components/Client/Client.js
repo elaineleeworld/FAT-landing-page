@@ -34,7 +34,7 @@ class Client extends React.Component {
          <div className='client-container'>
       {myClient.map(function(client, index){
          return (
-              <div className="client">
+              <div key={index} className="client">
                 <img className="client-image" src={client.img} />
              </div>
             )
