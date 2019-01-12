@@ -13,15 +13,15 @@ const NavBar = props => (
 		
 			<div className='navbar__container-logo'>
 			
-			{/*<a href='http://www.wearered.com' target="_blank" rel="noopener noreferrer">*/}
+			<a href='http://www.wearered.com' target="_blank" rel="noopener noreferrer">
 							<img src={red_logo_2} className="red-logo" alt="red_logo" />
 							
-						{/*</a>*/}
+						
 					
 						<span className='vertical-divider'></span>
 						
 						<h2 className='red-ad-tech'>AD TECH</h2>
-						
+						</a>
 			</div>
 
 			<div className='spacer'></div>
