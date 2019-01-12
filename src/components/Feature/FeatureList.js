@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import { Row, Col } from 'react-flexbox-grid';
 import './FeatureList.css';
 import LessArrow from '../../images/red_arrow_less.png'
+import MoreArrow from '../../images/red_arrow_more.png'
 
 
 
@@ -23,13 +24,15 @@ class FeatureList extends React.Component {
         super(props);
         console.log('THIS.PROPS',this.props)
         this.state = {
-            hideElement: false
+            hideElement: false,
+            showElement: false
         }
     }
 
-    hideElement(){
+    toggleElement(){
         this.setState((prevState,props) =>({
-            hideElement: !this.state.hideElement
+            hideElement: !this.state.hideElement, //hide the Less Arrow
+            showElement: !this.state.showElement //show the More Arrow again
         }))
     }
         
@@ -38,6 +41,7 @@ class FeatureList extends React.Component {
 
 
         const style = this.state.hideElement ? { display: 'none'} : {};
+        const style2 = this.state.showElement ? { display: 'block'} : {};
 
         const myFeature = [
             {
@@ -73,11 +77,13 @@ class FeatureList extends React.Component {
 
         ]
     return (
+
          <div>
+          <img src={MoreArrow} onClick={this.toggleElement.bind(this)} style={style2} className='red-arrow-more' alt='red arrow less'/>
       {myFeature.map(function(feature, index){
          return (
           
-             <Row className="feature">
+             <Row className="feature" style={style}>
             <Col xs={12} first="xs" last="sm">
                <img src={feature.img} />
                 </Col>
@@ -95,7 +101,7 @@ class FeatureList extends React.Component {
             
             )
        })}
-       <img src={LessArrow} onClick={this.hideElement.bind(this)} style={style} className='red-arrow-less' alt='red arrow less'/>
+       <img src={LessArrow} onClick={this.toggleElement.bind(this)} style={style} className='red-arrow-less' alt='red arrow less'/>
       </div> 
       
     );
