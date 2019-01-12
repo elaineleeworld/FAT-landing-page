@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Row, Col } from 'react-flexbox-grid';
 import './FeatureList.css';
-
+import LessArrow from '../../images/red_arrow_less.png'
 
 
 
@@ -22,10 +22,22 @@ class FeatureList extends React.Component {
     constructor(props){
         super(props);
         console.log('THIS.PROPS',this.props)
+        this.state = {
+            hideElement: false
+        }
+    }
+
+    hideElement(){
+        this.setState((prevState,props) =>({
+            hideElement: !this.state.hideElement
+        }))
     }
         
     
     render(){
+
+
+        const style = this.state.hideElement ? { display: 'none'} : {};
 
         const myFeature = [
             {
@@ -78,9 +90,12 @@ class FeatureList extends React.Component {
                     </Col>
                 </Row>
             </Col>
+              
              </Row>
+            
             )
        })}
+       <img src={LessArrow} onClick={this.hideElement.bind(this)} style={style} className='red-arrow-less' alt='red arrow less'/>
       </div> 
       
     );

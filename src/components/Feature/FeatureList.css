@@ -22,3 +22,9 @@
         width: 100%;
 	}
 }
+
+.red-arrow-less{
+    margin: 0 auto;
+    display:block;
+    padding-bottom: 30px;
+}

@@ -29,3 +29,9 @@
     letter-spacing: 6px;
 
 }
+
+.more-red-arrow{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}

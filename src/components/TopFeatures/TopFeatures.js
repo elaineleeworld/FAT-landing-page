@@ -2,6 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Row, Col } from 'react-flexbox-grid';
 import './TopFeatures.css';
+import FeatureList from '../Feature/FeatureList.js';
+import MoreArrow from '../../images/red_arrow_more.png'
 
 
 
@@ -22,10 +24,25 @@ class TopFeatures extends React.Component {
     constructor(props){
         super(props);
         console.log('THIS.PROPS',this.props)
+        this.state = {
+            open: false,
+            hideElement: false
+        }
+    }
+
+    showMoreFeatures(){
+        console.log("CLICKED")
+    this.setState((prevState,props) => ({
+        open: !this.state.open,
+        hideElement: !this.state.hideElement
+        
+        }))
     }
         
     
     render(){
+
+        const style = this.state.hideElement ? { display: 'none'} : {};
 
         const myFeature = [
             {
@@ -70,7 +87,10 @@ class TopFeatures extends React.Component {
              </Row>
             )
        })}
+      <img src={MoreArrow} onClick={this.showMoreFeatures.bind(this)} style={style}  className='more-red-arrow' alt='more red arrow'/>
+      {this.state.open ? <FeatureList/> : null}
       </div> 
+
       
     );
 

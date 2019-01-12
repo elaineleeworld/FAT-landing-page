@@ -45,11 +45,7 @@ class Home extends React.Component{
 			hideElement: !this.state.hideElement
 		}))
 	}
-	toggleImage(){
-		this.setState((prevState,props) =>({
-
-		}))
-	}
+	
 	render(){
 
 		const style = this.state.hideElement ? { display: 'none'} : {};
@@ -72,16 +68,16 @@ class Home extends React.Component{
 	  
 	  <div className='homepage-features'>
 	  <TopFeatures/>
-	  <Collapsible trigger={<img src={MoreArrow} onClick={this.hideElement.bind(this)} style={style} className='more-red-arrow' alt='more red arrow'/>}>
+	  {/*<Collapsible trigger={<img src={MoreArrow} onClick={this.hideElement.bind(this)} style={style} className='more-red-arrow' alt='more red arrow'/>}>
 	   
 	  	 <Grid fluid style={{ width: '85%', margin: '0 auto', padding: '20px'}}>
 	  	 	<FeatureList/>
 	  	 </Grid>
 	  	 
 	  <img src={LessArrow} onClick={this.collapseFeatures.bind(this)}  className='red-arrow-less' alt='red arrow less'/>
-	 {/* {this.state.open ? null : <img src={MoreArrow}/>}*/ }
+	  {this.state.open ? null : <FeatureList/>}
 	  	 
-	  	  </Collapsible>
+	  	  </Collapsible>*/}
 	  	   
 	  </div>
 	 
@@ -101,7 +97,7 @@ class Home extends React.Component{
 		        </a>
 	  	</div>
 	  	<div className='browse-container'>
-	  		<a href="https://github.com/ff0000-ad-tech/tmpl-standard-base" target="_blank" rel="noopener noreferrer">
+	  		<a href="https://github.com/ff0000-ad-tech" target="_blank" rel="noopener noreferrer">
 		       <img src={BrowseGithub} className="browse-github" alt="browse github" />
 		        </a>
 	  	</div>
