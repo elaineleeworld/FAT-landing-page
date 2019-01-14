@@ -128,7 +128,7 @@ html, body {
 
 .peeps-headline{
 position: relative;
-top: -300px;
+margin-top: -168px;
 float:right;
     height: 80px;
     background-color: white;
@@ -161,19 +161,20 @@ p.peeps-headline {
 }
 }
 
-.homepage-about {
-  height: 200px;
+.homepage-about-red {
+  height: auto;
   width: 70%;
-  text-align:left;
+  text-align:left !important;
   margin: 0 auto;
   color: #000;
   font-size: 28px;
   font-family: 'Rubik';
 }
-.homepage-about-red{
-  color: #000;
-  font-family: 'Rubik';
-}
+ 
+
+
+
+
 
 
 .box {

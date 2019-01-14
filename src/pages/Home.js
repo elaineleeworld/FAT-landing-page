@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import DownloadButton from '../styledComponents/DownloadButton.js';
 import { Grid } from 'react-flexbox-grid';
 import BracketsList from '../components/Hero/Hero.js';
+import Footer from '../components/Footer/Footer.js';
 import FeatureList from '../components/Feature/FeatureList.js';
 import TopFeatures from '../components/TopFeatures/TopFeatures.js';
 import Box from '../components/Box/Box.js';
@@ -115,13 +116,16 @@ class Home extends React.Component{
 		    <p className='peeps-headline'>ABOUT RED</p>
 	  </div> 
 	  <div className='homepage-about-red'>
-	 	 
-	  		
-	    	<p className="about-text-one">RED has been building display ads for over a decade. We were the first to deliver HTML 5. We innovated dynamic. We license our own CMP, Velvet.</p>
+	 	 <div className='container'>
+	 	 <p className='copy-text-about'>RED has been building display ads for over a decade. We were the first to deliver HTML 5. We innovated dynamic. We license our own CMP, Velvet.</p>
+	 	 <p className='copy-text-about'>We believe ads should load fast & look amazing - whether our agency build them, or yours.</p>
+	  
 	    	
-	    	<p className="about-text-two">We believe ads should load fast & look amazing - whether our agency built them, or yours.</p>
 		
-	 
+	 	</div>
+	  </div>
+	  <div>
+	  <Footer/>
 	  </div>
 
    </div> // end of homepage

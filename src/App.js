@@ -34,7 +34,7 @@ class App extends Component {
         <NavBar hamburgerToggleClickHandler= {this.hamburgerToggleClickHandler}/>
         {mobileOverlay}
         <Main/>
-        <Footer/>
+        
       </div>
     );
   }
