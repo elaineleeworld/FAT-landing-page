@@ -5,3 +5,64 @@
 	background-size: cover;
 	height: 300px;
 }
+
+.footer__container{
+	display:flex;
+	flex-direction: row;
+    
+    height: auto;
+    /*background-color: blue;*/
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+
+}
+
+
+
+.footer-logo, .footer-copyright{
+	
+}
+
+.footer__link__items ul  {
+	list-style-type: none;
+	font-size: 32px;
+	font-family: 'Rubik';
+	padding: 10px 0;
+	margin-top: -20px;
+	
+}
+
+.footer__link__items li a  {
+	text-decoration: none;
+	color: white;
+}
+.footer__contact_info {
+	color:white;
+	font-family: 'Rubik';
+	font-size: 16px;
+	float:left;
+	padding: 0 80px;
+	margin-top: -20px;
+}
+.footer__social_media_links{
+	/*float:left;*/
+
+}
+.instagram-logo, .twitter-logo, .linkedin-logo{
+	padding-right: 10px;
+}
+
+.footer__logo{
+	float:left;
+	text-align: center;
+}
+
+.footer__copyright {
+	color: black;
+	font-family: 'Rubik';
+	font-size: 12px;
+}
+
+
