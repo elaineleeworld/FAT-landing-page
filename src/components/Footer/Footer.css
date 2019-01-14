@@ -15,7 +15,7 @@
     width: 70%;
     margin: 0 auto;
     justify-content: space-between;
-    
+    align-items:top;
 
 }
 
@@ -30,7 +30,8 @@
 	font-size: 32px;
 	font-family: 'Rubik';
 	padding: 10px 0;
-	margin-top: -20px;
+	/*margin-top: -20px;*/
+	margin: 0;
 	
 }
 
@@ -44,7 +45,8 @@
 	font-size: 16px;
 	float:left;
 	padding: 0 80px;
-	margin-top: -20px;
+	/*margin-top: -20px;*/
+
 }
 .footer__social_media_links{
 	/*float:left;*/
@@ -57,6 +59,7 @@
 .footer__logo{
 	float:left;
 	text-align: center;
+	margin-top: 20px;
 }
 
 .footer__copyright {
