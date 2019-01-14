@@ -144,7 +144,8 @@ p.peeps-headline {
   margin: 0 auto;
   color: #000;
   font-size: 28px;
-  font-family: 'Rubik'; }
+  font-family: 'Rubik';
+  padding: 50px 0; }
 
 .box {
   background-color: white;
