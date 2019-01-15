@@ -1,11 +1,28 @@
 
 
-.bracket img{
-	position: relative;
-	padding: 50px;
-
+.plus-sign{
+  position: absolute;
+  top:80%;
+  left: 50%;
+  transform: translate(-50%,-50%);  
 }
-img {
+@media only screen and (max-width: 1500px){
+	.plus-sign{
+		top:70%;
+	}
+}
+@media only screen and (max-width: 800px){
+	.plus-sign{
+		top:59%;
+	}
+}
+@media only screen and (max-width: 600px){
+	.plus-sign{
+		top:58%;
+	}
+}
+.bracket-img{
+	width: 95%;
 	margin-bottom: 30px;
 }
 

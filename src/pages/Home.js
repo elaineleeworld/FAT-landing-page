@@ -61,7 +61,8 @@ class Home extends React.Component{
 		    <p className='hero-text-one'>AD DEVELOPMENT</p>
 			<p className='hero-text-two'>Author the best creative. Deliver big programmatic buys: <br/>Hundreds of targets, many sizes, and many devices.</p>
 			<BracketsList/>
-				<img src={PlusSign} className="plus-sign" alt="plus-sign" />
+				<br/>
+				<br/>
 		    <DownloadButton/>
 		 </div>
 	  </div>
