@@ -71,8 +71,9 @@
 
 @media only screen and (max-width: 1680px){
 	
+	
 	.footer__red_logo{
-		width: 70% !important;
+		width: 60% !important;
 		height: auto !important;
 		margin-bottom: 12px !important;
 	}
@@ -101,6 +102,8 @@
 	}
 	}
 
+
+
 @media only screen and (max-width: 600px){
 	
 	.footer__link__items ul  {
@@ -116,7 +119,7 @@
 	
 	.footer__red_logo{
 		width: 55% !important;
-		padding-bottom: 30px;
+		padding-bottom: 0px;
 		padding-left: 10px;
 	}
 	.footer__copyright{

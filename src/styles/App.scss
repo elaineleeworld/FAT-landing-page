@@ -20,20 +20,20 @@ html, body {
 }
 
 .container {
-  width: 50%;
+  width: 55% !important;
   margin: 0 auto;
   height:  100%;
 }
 
 @media only screen and (max-width: 1680px){
   .container{
-    width: 60%;
+    width: 65% !important;
   }
 }
 
 @media only screen and (max-width: 1340px){
   .container {
-    width: 60% !important;
+    width: 80% !important;
   }
 }
 @media only screen and (max-width: 600px){
@@ -160,31 +160,28 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
+
+
+  
+    .download-container{
+      width: 50%;
+      border-right: 0.1px solid grey;
+    }
+    .browse-container{
+       width: 50%;
+    }
+
 @media only screen and (max-width: 700px){
-img.download-template{
-  width: 75%;
-}
-img.browse-github{
-  width: 60%
+    img.download-template{
+      width: 75%;
+    }
+    img.browse-github{
+      width: 60%
+    }
+
 }
 
-.download-container{
-  width: 50%;
-  border-right: 0.1px solid grey;
-}
-.browse-container{
-   width: 50%;
-}
-}
-
-@media only screen and (max-width: 600px) {
-  .download-container, .browse-container {
-   flex-direction: column;
-   flex-wrap: wrap;
-  }
-}
 .homepage-peeps{
   background-image: url('../images/peeps.png');
   background-repeat: no-repeat;

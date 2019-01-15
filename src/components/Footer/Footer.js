@@ -11,7 +11,9 @@ class Footer extends Component {
 	render(){
 		return(
 		        <footer className="App-footer">
+
 			         <div className='container'>
+			         
 
 				         <div className='footer__link__items'>
 							<ul>
@@ -39,6 +41,7 @@ class Footer extends Component {
 							  <img src={FooterLogo} className='footer__red_logo' alt="footer red logo" />
 						 <p className='footer__copyright'>&copy; 2018 RED. ALL RIGHTS RESERVED</p>
 						 </div>
+						 
 					 </div>
 		        </footer>
 			);
