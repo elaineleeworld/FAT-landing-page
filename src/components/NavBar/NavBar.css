@@ -31,6 +31,17 @@
 		width: 90%;
 	}
 }
+@media only screen and (max-width: 600px){
+	.red-logo{
+		width: 50%;
+	}
+	.vertical-divider{
+		height: 15px !important;
+	}
+	.red-ad-tech{
+		font-size: 20px !important;
+	}
+}
 
 .navbar__container-logo a{
   text-decoration: none;
@@ -44,7 +55,7 @@
 }
 .vertical-divider{
 	width: 0px;
-	height: 30px;
+	height: 25px;
 	border: 1px solid red;
 	margin: 0 15px;
 	display: inline-block;
