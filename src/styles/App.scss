@@ -19,6 +19,35 @@ html, body {
   
 }
 
+.container {
+  width: 50%;
+  margin: 0 auto;
+  height:  100%;
+}
+
+@media only screen and (max-width: 1680px){
+  .container{
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1340px){
+  .container {
+    width: 60% !important;
+  }
+}
+@media only screen and (max-width: 600px){
+  .container{
+    width: 90% !important;
+  }
+  }
+
+.homepage-hero{
+  background: url('../images/bg_image_top.jpg');
+  color: white;
+  padding: 20px 0;
+  border-bottom: 3px solid red;
+}
 .hero-headline{
   font-family: 'Rubik-Light';
   font-size: 46px;
@@ -30,7 +59,7 @@ html, body {
 .hero-text-one{
   /*color: red;*/
   font-family: 'SharpGroteskMedium24';
-  font-size: 71px;
+  font-size: 68px;
   font-weight: bold;
   letter-spacing: 10px;
   background: linear-gradient(to top, #fc4061 0%, #fc5c48 100%);
@@ -43,39 +72,14 @@ html, body {
   color: #a1a09e;
   font-size: 19px;
   font-family: 'Rubik-Light';
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 30px;
-}
-
-.container {
-  width: 50%;
-  margin: 0 auto;
-  height:  100%;
 }
 
 .plus-sign{
   position:absolute;
       margin: -121px -6px;
-}
-/* @media only screen and (min-width: 768px) {
-  .container {
-  width: 616px;
-  margin: 0 auto;
-}
-  }
-@media only screen and (max-width: 600px) {
-  .container {
-  width: 80%;
-  margin: 0 auto;
-}
-  }*/
-.homepage-hero{
-  /*background-color: black;*/
-  background: url('../images/bg_image_top.jpg');
-  color: white;
-  padding: 20px 0;
-  border-bottom: 3px solid red;
 }
 
 .homepage-features {
@@ -90,18 +94,7 @@ html, body {
   color: white;
   padding: 20px 0;
 }
-.homepage-steps .container {
-  width: auto;
-}
-/*.homepage-steps h1 {
-  margin: 0;
-  text-align: left;
-  margin-top: -20px;
-}
-.homepage-steps p {
-  color: black;
-  font-size: 20px;
-}*/
+
 
 .homepage-download {
   background-color: #242b3b;
@@ -119,8 +112,22 @@ img.download-template{
 img.browse-github{
   width: 60%
 }
+
+.download-container{
+  width: 50%;
+  border-right: 0.1px solid grey;
+}
+.browse-container{
+   width: 50%;
+}
 }
 
+@media only screen and (max-width: 600px) {
+  .download-container, .browse-container {
+   flex-direction: column;
+   flex-wrap: wrap;
+  }
+}
 .homepage-peeps{
   background-image: url('../images/peeps.png');
   background-repeat: no-repeat;
@@ -131,9 +138,6 @@ img.browse-github{
   height: 0;
   width: 100%;
   padding-top: 60%;
-
-
-
 }
 
 .peeps-headline{
@@ -154,60 +158,43 @@ p.peeps-headline {
     padding-left: 30px;
 }
 @media only screen and (max-width: 900px){
-.peeps-headline{
-  height: 50px;
-  font-size: 24px;
-  margin-top: -128px;
+  .peeps-headline{
+    height: 50px;
+    font-size: 24px;
+    margin-top: -128px;
   }
   p.peeps-headline{
-  padding-top: 10px !important;
-  padding-left: 30px !important;
-  
+    padding-top: 10px !important;
+    padding-left: 30px !important;
+    
   }
-  }
+}
 
-  @media only screen and (max-width: 800px){
-.peeps-headline{
-  height: 35px;
-  font-size: 24px;
-  margin-top: -75px;
+@media only screen and (max-width: 800px){
+  .peeps-headline{
+    height: 35px;
+    font-size: 24px;
+    margin-top: -75px;
   }
   p.peeps-headline{
-  padding-top: 5px !important;
-  padding-left: 7px !important;
-  
-  }
-}@media only screen and (max-width: 600px){
-.peeps-headline{
-  height: 20px;
-  font-size: 16px;
-  margin-top: -45px;
-  }
-  p.peeps-headline{
-  padding-top: 0 !important;
-  padding-left: 7px !important;
+    padding-top: 5px !important;
+    padding-left: 7px !important;
   
   }
 }
-
-
-
-.download-container{
-  width: 50%;
-  border-right: 0.1px solid grey;
-
-
+@media only screen and (max-width: 600px){
+  .peeps-headline{
+    height: 20px;
+    font-size: 16px;
+    margin-top: -45px;
+  }
+  p.peeps-headline{
+    padding-top: 0 !important;
+    padding-left: 7px !important;
+  
+  }
 }
-.browse-container{
-   width: 50%;
-}
 
-@media only screen and (max-width: 600px) {
-  .download-container, .browse-container {
-   flex-direction: column;
-   flex-wrap: wrap;
-}
-}
 
 .homepage-about-red {
   height: auto;
@@ -222,17 +209,12 @@ p.peeps-headline {
 }
 
 @media only screen and (max-width: 600px){
-.homepage-about-red{
-  font-size: 15px;
-  width: 90%;
-}
+  .homepage-about-red{
+    font-size: 15px;
+    width: 90%;
+  }
 }
  
-
-
-
-
-
 
 .box {
   background-color:white;
@@ -244,10 +226,11 @@ p.peeps-headline {
   display:inline-block;
   border: 2px solid black;
   margin-bottom: 40px;
+
 }
 
 .headline-style-steps {
-   color: '#fff';
+  color: '#fff';
   font-family: 'SharpGroteskMedium24';
   letter-spacing: 6px;
 }
@@ -259,22 +242,6 @@ p.peeps-headline {
   font-size: 36px;
 }
 
-/*li {
-  margin: 0 auto;
-  text-align:center;
-  padding: 20px;
-  border: 2px solid grey;
-  display: inline-block;
-  width: 180px;
-
-}
-
-li:nth-child(odd){
-  background: yellow;
-}
-li:nth-child(even){
-  background: lightgreen;
-}*/
 
 
 
@@ -296,17 +263,7 @@ video {
 }
 
 
-circle {
-    background: #f00;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    line-height: 140px;
-    margin:10px;
-    font-weight: bold;
-}
+
 
 .features-container {
   text-align:center;

@@ -24,8 +24,6 @@
 }
 
 
-
-
 .footer__link__items li a:hover {
 	color:black;
 }
@@ -72,9 +70,7 @@
 }
 
 @media only screen and (max-width: 1680px){
-	.container{
-		width: 70%;
-	}
+	
 	.footer__red_logo{
 		width: 70% !important;
 		height: auto !important;
@@ -84,9 +80,7 @@
 	}
 
 @media only screen and (max-width: 1340px){
-	.container {
-		width: 85% !important;
-	}
+	
 	.footer__logo{
 		display: inline-block;
 	}
@@ -108,9 +102,7 @@
 	}
 
 @media only screen and (max-width: 600px){
-	.container{
-		width: 100% !important;
-	}
+	
 	.footer__link__items ul  {
 		font-size: 16px;
 	}

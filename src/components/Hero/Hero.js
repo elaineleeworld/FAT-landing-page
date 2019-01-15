@@ -36,7 +36,7 @@ class BracketsList extends React.Component {
         ]
 
          return (
-         <div className='container'>
+         <div >
       {myBracket.map(function(bracket, index){
          return (
           

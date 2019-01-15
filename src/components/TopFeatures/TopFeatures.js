@@ -66,7 +66,7 @@ class TopFeatures extends React.Component {
         ]
     return (
          <div>
-            <h2 className='headline-style-topfeatures'>FEATURES</h2>
+           
       {myFeature.map(function(feature, index){
          return (
           
@@ -89,6 +89,7 @@ class TopFeatures extends React.Component {
        })}
       <img src={MoreArrow} onClick={this.showMoreFeatures.bind(this)} style={style}  className='more-red-arrow' alt='more red arrow'/>
       {this.state.open ? <FeatureList/> : null}
+    
       </div> 
 
       
