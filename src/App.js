@@ -33,8 +33,8 @@ class App extends Component {
       <div style={{height: '100%'}}>
         <NavBar hamburgerToggleClickHandler= {this.hamburgerToggleClickHandler}/>
         {mobileOverlay}
-        <Main/>
-        
+       <Main/>
+        <Footer/>
       </div>
     );
   }

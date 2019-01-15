@@ -124,9 +124,7 @@ class Home extends React.Component{
 		
 	 	</div>
 	  </div>
-	  <div>
-	  <Footer/>
-	  </div>
+	  
 
    </div> // end of homepage
 )
