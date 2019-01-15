@@ -72,7 +72,7 @@ class TopFeatures extends React.Component {
           
              <Row key={index} className="feature">
             <Col  xs={12} first="xs" last="sm">
-               <img src={feature.img} />
+               <img src={feature.img} className='feature-img'/>
                 </Col>
              <Col xs={12}>
                 <Row between="lg">

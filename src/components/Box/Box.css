@@ -10,6 +10,7 @@ h2, h3{
 
 .box-container{
 	padding-bottom: 50px;
+
 }
 .box {
     background: white;
@@ -18,8 +19,8 @@ h2, h3{
     height: 500px;
     margin: 3px;
     /*margin: 0 auto;*/
-   
 }
+
 
 
 .box-number {
@@ -28,7 +29,7 @@ h2, h3{
 	margin: 0;
     text-align: left;
     margin-left: -3px;
-  	margin-top: -30px;
+  	margin-top: -20px;
 }
  
 .box-label {
@@ -61,4 +62,20 @@ h2, h3{
 	font-size: 18px;
 	padding: 30px 10px;
 	text-align:left;
+}
+
+@media only screen and (max-width: 600px){
+	.box {
+		width: 46%;
+		height: 400px;
+	}
+	.vertical-text{
+		margin-left: 30px;
+	}
+	.box-headline {
+		font-size: 20px;
+	}
+	.box-text{
+		font-size: 13px;
+	}
 }
