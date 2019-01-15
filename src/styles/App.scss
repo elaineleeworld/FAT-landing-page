@@ -112,9 +112,12 @@ html, body {
   justify-content: center;
 
 }
-@media only screen and (max-width: 600px){
-img.download-template, img.browse-github{
-  width: 60%;
+@media only screen and (max-width: 700px){
+img.download-template{
+  width: 75%;
+}
+img.browse-github{
+  width: 60%
 }
 }
 
