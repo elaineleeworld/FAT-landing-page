@@ -111,7 +111,11 @@ html, body {
   align-items: center;
   justify-content: center;
 
-
+}
+@media only screen and (max-width: 600px){
+img.download-template, img.browse-github{
+  width: 60%;
+}
 }
 
 .homepage-peeps{
