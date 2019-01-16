@@ -247,7 +247,8 @@ p.peeps-headline {
   font-size: 36px; }
 
 .showcase-parent {
-  text-align: center; }
+  text-align: center;
+  padding-top: 80px; }
 
 video {
   padding: 10px; }

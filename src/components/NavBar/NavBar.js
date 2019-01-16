@@ -90,9 +90,9 @@ class NavBar extends React.Component{
 			<div className='spacer'></div>
 			<div className='navbar__container-items'>
 				<ul>
-					<li><Link ref={this.main} onClick={this.handleScrollhome} to='/'>HOME</Link></li>
-					<li><Link ref={this.main} onClick={this.handleScroll} to='/'>FEATURES</Link></li>
-					<li><Link ref={this.main} onClick={this.handleScrollabout} to='/'>ABOUT</Link></li>
+					<li ref={this.main} onClick={this.handleScrollhome}><Link  to='/'>HOME</Link></li>
+					<li ref={this.main} onClick={this.handleScroll}><Link  to='/'>FEATURES</Link></li>
+					<li ref={this.main} onClick={this.handleScrollabout}><Link  to='/'>ABOUT</Link></li>
 					<li><Link to='/showcase'>SHOWCASE</Link></li>
 				</ul>
 			</div>
