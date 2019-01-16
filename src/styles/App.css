@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'Gotham-Light';
-  src: local("Gotham-Light"), url(../fonts/Gotham-Light.ttf) format("ttf"); }
+  src: local("Gotham-Light"), url(../fonts/Gotham-Light.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Rubik-Light';
-  src: local("Rubik-Light"), url(../fonts/Rubik-Light.ttf) format("ttf"); }
+  src: local("Rubik-Light"), url(../fonts/Rubik-Light.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Rubik-Regular';
-  src: local("Rubik-Regular"), url(../fonts/Rubik-Regular.ttf) format("ttf"); }
+  src: local("Rubik-Regular"), url(../fonts/Rubik-Regular.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'SharpGroteskMedium24';
-  src: local("SharpGroteskMedium24"), url(../fonts/SharpGroteskMedium24.otf) format("otf"); }
+  src: local("SharpGroteskMedium24"), url(../fonts/SharpGroteskMedium24.otf) format("opentype"); }
 
 body {
   margin: 0;
