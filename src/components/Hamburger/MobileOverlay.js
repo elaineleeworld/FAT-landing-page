@@ -7,7 +7,8 @@ const MobileOverlay = props => (
 			<div className='mobile-overlay-close' onClick={props.click}>X</div>
 			<ul>
 				<li onClick={props.click}><Link to='/'>Home</Link></li>
-				<li onClick={props.click}><Link to='/features'>Features</Link></li>
+				<li onClick={props.click}><Link to='/'>Features</Link></li>
+				<li onClick={props.click}><Link to='/'>About</Link></li>
 				<li onClick={props.click}><Link to='/showcase'>Showcase</Link></li>
 			</ul>
 		</nav>

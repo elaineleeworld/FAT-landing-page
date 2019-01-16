@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+
+import { render } from 'react-dom';
 import './NavBar.css';
 import HamburgerButton from '../Hamburger/HamburgerButton';
 import red_logo_2 from '../../images/red_logo2.png'
@@ -7,8 +9,15 @@ import { Link } from 'react-router-dom';
 import GothamLight from '../../fonts/Gotham-Light.ttf'
 import RubikRegular from '../../fonts/Rubik-Regular.ttf'
 
-const NavBar = props => (
-	<header className='navbar'>
+class NavBar extends React.Component{
+	constructor(props){
+		super(props);
+		this.main = React.createRef();
+	}
+
+	render(){
+		return(
+			<header className='navbar'>
 		<nav className='navbar__container'>
 		
 			<div className='navbar__container-logo'>
@@ -28,17 +37,20 @@ const NavBar = props => (
 			<div className='navbar__container-items'>
 				<ul>
 					<li><Link to='/'>HOME</Link></li>
-					<li><Link to='/features'>FEATURES</Link></li>
-					<li><Link to='/about'>ABOUT</Link></li>
+					<li><Link to='/'>FEATURES</Link></li>
+					<li><Link to='/'>ABOUT</Link></li>
 					<li><Link to='/showcase'>SHOWCASE</Link></li>
 				</ul>
 			</div>
 			<div className='hamburger'>
-		          	<HamburgerButton click={props.hamburgerToggleClickHandler}/>
+		          	<HamburgerButton click={this. props.hamburgerToggleClickHandler}/>
 		    </div>
 		</nav>
 	</header>
 
 	);
+	};
+}
+	
 
 export default NavBar;
