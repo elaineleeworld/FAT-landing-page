@@ -37,7 +37,7 @@ class BracketsList extends React.Component {
         ]
 
          return (
-         <div >
+         <div className='bracket-container'>
       {myBracket.map(function(bracket, index){
          return (
           
@@ -51,9 +51,11 @@ class BracketsList extends React.Component {
             )
        })}
       <img src={PlusSign} className="plus-sign" alt="plus-sign" />
+
       </div> 
       
     );
+         
 
     };
 }
