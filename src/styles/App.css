@@ -94,10 +94,11 @@ html, body {
     font-size: 39px; }
   .hero-text-two {
     font-size: 15px; }
-  p.bracket-text {
+  /* p.bracket-text{
     width: 20%;
     font-size: 15px;
-    transform: translate(19%, -7%); } }
+    transform: translate(19%, -7%);
+  }*/ }
 
 @media only screen and (max-width: 800px) {
   .hero-headline {
@@ -106,10 +107,11 @@ html, body {
     font-size: 22px; }
   .hero-text-two {
     font-size: 12px; }
-  p.bracket-text {
+  /* p.bracket-text{
     width: 23%;
     font-size: 12px;
-    transform: translate(10%, -7%); } }
+    transform: translate(10%, -7%);
+  }*/ }
 
 @media only screen and (max-width: 600px) {
   .hero-headline {
@@ -118,10 +120,11 @@ html, body {
     font-size: 22px; }
   .hero-text-two {
     font-size: 12px; }
-  p.bracket-text {
+  /*p.bracket-text{
     width: 35%;
     font-size: 12px;
-    transform: translate(10%, -5%); } }
+    transform: translate(10%, -5%);
+  }*/ }
 
 #homepage-features {
   background-color: white;
@@ -222,7 +225,11 @@ p.peeps-headline {
 @media only screen and (max-width: 600px) {
   .homepage-about-red {
     font-size: 15px;
-    width: 90%; } }
+    width: 90%; }
+  .headline-style-clients {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 20px; } }
 
 .box {
   background-color: white;
@@ -264,7 +271,8 @@ Iframe {
   width: 500px;
   height: 500px;
   overflow-x: hidden;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  padding: 15px; }
 
 .features-container {
   text-align: center; }

@@ -117,11 +117,11 @@ html, body {
   .hero-text-two{
     font-size: 15px;
   }
-  p.bracket-text{
+ /* p.bracket-text{
     width: 20%;
     font-size: 15px;
     transform: translate(19%, -7%);
-  }
+  }*/
 }
 @media only screen and (max-width: 800px){
   .hero-headline{
@@ -133,11 +133,11 @@ html, body {
   .hero-text-two{
     font-size: 12px;
   }
-  p.bracket-text{
+ /* p.bracket-text{
     width: 23%;
     font-size: 12px;
     transform: translate(10%, -7%);
-  }
+  }*/
   
 }
 @media only screen and (max-width: 600px){
@@ -150,11 +150,11 @@ html, body {
   .hero-text-two{
     font-size: 12px;
   }
-  p.bracket-text{
+  /*p.bracket-text{
     width: 35%;
     font-size: 12px;
     transform: translate(10%, -5%);
-  }
+  }*/
 
 }
 
@@ -285,6 +285,11 @@ p.peeps-headline {
   .homepage-about-red{
     font-size: 15px;
     width: 90%;
+  }
+  .headline-style-clients{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 20px;
   }
 }
  
