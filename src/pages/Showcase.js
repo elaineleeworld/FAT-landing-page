@@ -20,7 +20,7 @@ class Showcase extends Component {
 			   {/* <div>{renderVideo}</div>*/}
 			   <Iframe url="https://tech.wearered.com/"
 			        width='100%'
-			        height="1000"
+			        height="1500"
 			        id="red-showcase"
 			        className="red-showcase"
 			        display="initial"

@@ -260,5 +260,11 @@ video {
   height: 100%;
   background: transparent; }
 
+Iframe {
+  width: 500px;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
 .features-container {
   text-align: center; }
