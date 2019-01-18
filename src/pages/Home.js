@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { forwardRef, Component } from 'react';
 import DownloadButton from '../styledComponents/DownloadButton.js';
 import { Grid } from 'react-flexbox-grid';
 import BracketsList from '../components/Hero/Hero.js';
@@ -46,8 +46,11 @@ class Home extends React.Component{
 			hideElement: !this.state.hideElement
 		}))
 	}
+
+	
 	
 	render(){
+		const { ref, props } = React.forwardRef((props, ref) => ({ props, ref }));
 
 		const style = this.state.hideElement ? { display: 'none'} : {};
 
@@ -55,7 +58,7 @@ class Home extends React.Component{
 
 	<div className='homepage'>
 
-	  <div className='homepage-hero'>
+	  <div id='homepage-hero'>
 	  	 <div className='container'>
 		    <p className='hero-headline'>Light-weight, open-source, ES6</p>
 		    <p className='hero-text-one'>AD DEVELOPMENT</p>
@@ -67,14 +70,14 @@ class Home extends React.Component{
 		 </div>
 	  </div>
 	  
-	  <div className='homepage-features'>
+	  <div id='homepage-features'>
 		   <div className='features-container'>
-			   <h2 className='headline-style-topfeatures'>FEATURES</h2>
+			   <h2 id='headline-style-topfeatures'>FEATURES</h2>
 			   <TopFeatures/>
 	  	   </div>
 	  </div>
 	 
-	  <div className='homepage-steps'>
+	  <div id='homepage-steps'>
 		  <div className='container'>
 		  	<h1 className='headline-style-steps'>4 EASY STEPS TO GET STARTED</h1>
 		  	<Box />
@@ -82,7 +85,7 @@ class Home extends React.Component{
 	  	</div>
 	  </div>
 
-	  <div className='homepage-download'>
+	  <div id='homepage-download'>
 	  	<div className='download-container'>
 	  		<a href="https://github.com/ff0000-ad-tech/tmpl-standard-base" target="_blank" rel="noopener noreferrer">
 		       <img src={DownloadTemplate} className="download-template" alt="download template" />
@@ -95,18 +98,18 @@ class Home extends React.Component{
 	  	</div>
 	  </div>
 
-	  <div className='homepage-clients'>
+	  <div id='homepage-clients'>
 		  <div className='client-container'>
 			  <h2 className='headline-style-clients'>POWERED BY RED AD TECH</h2>
 			  <Client/>
 	  	  </div>
 	  </div> 
 
-	   <div className='homepage-peeps'>
+	   <div id='homepage-peeps'>
 		    <p className='peeps-headline'>ABOUT RED</p>
 	   </div> 
 
-	  <div className='homepage-about-red'>
+	  <div id='homepage-about-red'>
 	 	 <div className='container'>
 	 	 <p className='copy-text-about'>RED has been building display ads for over a decade. We were the first to deliver HTML 5. We innovated dynamic. We license our own CMP, Velvet.</p>
 	 	 <p className='copy-text-about'>We believe ads should load fast & look amazing - whether our agency build them, or yours.</p>

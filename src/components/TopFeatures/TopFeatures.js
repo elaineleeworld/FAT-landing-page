@@ -65,7 +65,7 @@ class TopFeatures extends React.Component {
             }
         ]
     return (
-         <div>
+         <div id='top-features'>
            
       {myFeature.map(function(feature, index){
          return (

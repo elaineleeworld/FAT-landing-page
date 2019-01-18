@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import createBrowserHistory from 'history';
+import { Redirect, withRouter } from 'react-router';
 
 import { render } from 'react-dom';
 import './NavBar.css';
@@ -12,56 +13,102 @@ import RubikRegular from '../../fonts/Rubik-Regular.ttf'
 
 class NavBar extends React.Component{
 	constructor(props){
-		super(props);
-		this.main = React.createRef();
-		// this.state={};
+		super(props)
+		console.log("CURRENT LOCATION", props.location);
+		// this.main = React.createRef();
+		// this.heroSection = React.createRef();
+		// this.featuresSection = React.createRef();
 
-		// this.stickyNav = this.stickyNav.bind(this);
+		this.state = {
+			homePage: false
+		}
+
+		this.handleScrollHome = this.handleScrollHome.bind(this);
+		this.handleScrollFeatures = this.handleScrollFeatures.bind(this);
+		this.handleScrollAbout = this.handleScrollAbout.bind(this);
+		
 	}
 
-	// stickyNav(){
-	// 	this.setState({scroll: window.scrollY});
-	// }
+	
 
-	//  componentDidMount() {
-	// 	const el = document.querySelector('nav');
-	// 	this.setState({top: el.offsetTop, height: el.offsetHeight});
-	// 	window.addEventListener('scroll', this.handleScroll);
-	// }
+// 	 handleScroll = e => {
+//     e.preventDefault();
+//     const main = this.main.current;
+//     window.scrollTo({
+//       top: 600,
+//       left: 0,
+//       behavior: "smooth"
+//     });
+// }
+handleScrollHome(){
+	// console.log('HOMEPAGE',this.state.homePage)
+	 window.scrollTo({
+         top: 0,
+         behavior: "smooth"
+    });
+
+	// this.setState((prevState,props) => ({
+	// 	homePage: !this.state.homePage,
+		
+	// 	}))
+	// if (this.state.homePage === true){
+	// 		return <Redirect to='/' />
+	// 	}
   
- //  componentDidUpdate() {
-	// 	this.state.scroll > this.state.top ? 
-	// 		document.body.style.paddingTop = `${this.state.height}px` :
-	// 		document.body.style.paddingTop = 0;
-	// }
+}
+handleScrollFeatures(){
 
-	 handleScroll = e => {
-    e.preventDefault();
-    const main = this.main.current;
+// console.log('HOMEPAGE',this.state.homePage)
+// 	this.setState((prevState,props) => ({
+// 		homePage: true,
+		
+// 		}))
+
+	if (this.props.location.pathname !== '/'){
+			return <Redirect to='/' />
+		}
+	
+    var element = document.getElementById("headline-style-topfeatures");
+    element.scrollIntoView( {behavior: 'smooth'} );
     window.scrollTo({
-      top: 600,
-      left: 0,
-      behavior: "smooth"
-    });
+    	top: element.offsetTop - 120,
+    	behavior: 'smooth'
+    })
+    
 }
-	 handleScrollabout = e => {
-    e.preventDefault();
-    const main = this.main.current;
-    window.scrollTo({
-      top: 3600,
-      left: 0,
-      behavior: "smooth"
-    });
+handleScrollAbout(){
+	// this.setState((prevState,props) => ({
+	// 	homePage: !this.state.homePage,
+		
+	// 	}))
+	// if (this.state.homePage === true){
+	// 		return <Redirect to='/:homepage-about-red' />
+	// 	}
+	if (this.props.location.pathname !== '/'){
+			return <Redirect to='/' />
+		}
+    var element = document.getElementById("homepage-about-red");
+  element.scrollIntoView( {behavior: 'smooth'} );
+ 
 }
-    handleScrollhome = e => {
-    e.preventDefault();
-    const main = this.main.current;
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth"
-    });
-}
+// 	 handleScrollabout = e => {
+//     e.preventDefault();
+//     const main = this.main.current;
+//     window.scrollTo({
+//       top: 3600,
+//       left: 0,
+//       behavior: "smooth"
+//     });
+// }
+//     handleScrollhome = e => {
+//     e.preventDefault();
+//     const main = this.main.current;
+//     window.scrollTo({
+//       top: 0,
+//       left: 0,
+//       behavior: "smooth"
+//     });
+// }
 	
 	// navigateHome(props){
 		
@@ -90,9 +137,9 @@ class NavBar extends React.Component{
 			<div className='spacer'></div>
 			<div className='navbar__container-items'>
 				<ul>
-					<li ref={this.main} onClick={this.handleScrollhome}><Link  to='/'>HOME</Link></li>
-					<li ref={this.main} onClick={this.handleScroll}><Link  to='/'>FEATURES</Link></li>
-					<li ref={this.main} onClick={this.handleScrollabout}><Link  to='/'>ABOUT</Link></li>
+					<li  onClick={this.handleScrollHome}><Link  to='/'>HOME</Link></li>
+					<li  onClick={this.handleScrollFeatures}><Link  to='/'>FEATURES</Link></li>
+					<li  onClick={this.handleScrollAbout}><Link  to='/'>ABOUT</Link></li>
 					<li><Link to='/showcase'>SHOWCASE</Link></li>
 				</ul>
 			</div>
@@ -107,4 +154,4 @@ class NavBar extends React.Component{
 }
 	
 
-export default NavBar;
+export default withRouter(NavBar);

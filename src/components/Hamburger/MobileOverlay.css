@@ -1,4 +1,4 @@
-.mobile-overlay {
+#mobile-overlay {
 	top: 0;
 	left: 0;
 	position:fixed;
@@ -11,7 +11,13 @@
 	font-size: 25px;
 }
 
-.mobile-overlay ul {
+@media only screen and (min-width: 600px){
+	#mobile-overlay{
+		display:none;
+	}
+}
+
+#mobile-overlay ul {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
@@ -20,21 +26,21 @@
 	padding: 2rem 2rem;
 
 }
-.mobile-overlay a {
+#mobile-overlay a {
 	text-decoration:none;
 	color:white;
 }
 
-.mobile-overlay li {
+#mobile-overlay li {
 	margin: 0.5rem 0;
 }
 
-.mobile-overlay a:hover {
+#mobile-overlay a:hover {
 	border-bottom: 3px solid red;
     padding-bottom: 5px;
 }
 
-.mobile-overlay-close {
+#mobile-overlay-close {
 	color: white;
 	float:right;
 	padding: 30px;

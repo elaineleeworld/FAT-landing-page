@@ -46,7 +46,7 @@ html, body {
   .container {
     width: 90% !important; } }
 
-.homepage-hero {
+#homepage-hero {
   background: url("../images/bg_image_top.jpg");
   color: white;
   padding: 100px 0 20px 0;
@@ -123,18 +123,18 @@ html, body {
     font-size: 12px;
     transform: translate(10%, -5%); } }
 
-.homepage-features {
+#homepage-features {
   background-color: white;
   color: black; }
 
-.homepage-steps {
+#homepage-steps {
   background: url("../images/stepsBG.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   padding: 20px 0; }
 
-.homepage-download {
+#homepage-download {
   background-color: #242b3b;
   height: 160px;
   border: 0.1px solid grey;
@@ -155,7 +155,7 @@ html, body {
   img.browse-github {
     width: 60%; } }
 
-.homepage-peeps {
+#homepage-peeps {
   background-image: url("../images/peeps.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -209,7 +209,7 @@ p.peeps-headline {
     padding-top: 0 !important;
     padding-left: 7px !important; } }
 
-.homepage-about-red {
+#homepage-about-red {
   height: auto;
   width: 100%;
   text-align: left !important;
