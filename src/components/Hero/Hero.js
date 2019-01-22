@@ -10,10 +10,21 @@ class BracketsList extends React.Component {
     constructor(props){
         super(props);
         console.log('THIS.PROPS',this.props)
+        this.state = {
+            show: true
+        }
+
+        this.showBrackets = this.showBrackets.bind(this);
     }
-        
+    
+    showBrackets(){
+      this.setState( (prevState, props) => ({
+        show: !this.state.show
+      }))
+    }
     
     render(){ 
+       const display = this.state.show ? {visibility: 'visible'} : {visibility: 'hidden'};
 
 
    const myBracket = [
@@ -37,12 +48,12 @@ class BracketsList extends React.Component {
         ]
 
          return (
-         <div className='bracket-container'>
+         <div  className='bracket-container'>
       {myBracket.map(function(bracket, index){
          return (
           
              
-       <div key={index} className='brackets-list'>
+       <div style={display} key={index} className='brackets-list'>
         <p className='bracket-text'>{bracket.text}</p>
                <img src={bracket.img} className='bracket-img'/>
                   </div>
@@ -50,7 +61,7 @@ class BracketsList extends React.Component {
             
             )
        })}
-      <img src={PlusSign} className="plus-sign" alt="plus-sign" />
+      <img src={PlusSign} onClick={this.showBrackets} className="plus-sign" alt="plus-sign" />
 
       </div> 
       
