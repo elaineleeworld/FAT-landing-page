@@ -22,14 +22,14 @@
 	background-size: cover;
 	height: auto;
 	overflow:hidden;
-	font-family: 'Rubik';
+	font-family: 'Rubik-Light';
 }
 
 
 .footer__link__items ul  {
 	list-style-type: none;
 	font-size: 32px;
-	font-family: 'Rubik';
+	font-family: 'Rubik-Light';
 	padding: 10px 0;
 	/*margin-top: -20px;*/
 	margin: 0;
@@ -52,11 +52,11 @@
 }
 .footer__contact_info {
 	color:white;
-	font-family: 'Rubik';
+	font-family: 'Rubik-Light';
 	font-size: 16px;
 	display: inline-block;
 	padding: 0 0px 0 40px ;
-	font-family: 'Rubik';
+	
 
 }
 .footer__social_media_links{
