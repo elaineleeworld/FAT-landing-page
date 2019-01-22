@@ -19,10 +19,8 @@ import Peeps from '../images/peeps.png'
 
 import SharpGroteskMedium24 from '../fonts/SharpGroteskMedium24.otf'
 import RubikLight from '../fonts/Rubik-Light.ttf'
-
-
-
-console.log("ARROW", MoreArrow)
+import GothamLight from '../fonts/Gotham-Light.ttf'
+import RubikRegular from '../fonts/Rubik-Regular.ttf'
 
 
 

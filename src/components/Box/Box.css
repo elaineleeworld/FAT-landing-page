@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'Gotham-Light';
+  src: local('Gotham-Light'), url(../../fonts/Gotham-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik-Light';
+  src: local('Rubik-Light'), url(../../fonts/Rubik-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik-Regular';
+  src: local('Rubik-Regular'), url(../../fonts/Rubik-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'SharpGroteskMedium24';
+  src: local('SharpGroteskMedium24'), url(../../fonts/SharpGroteskMedium24.otf) format('opentype');
+}
+
 h1 {
 	color: white;
 	padding-bottom: 20px;
@@ -18,6 +35,7 @@ h2, h3{
     border-bottom: 3px solid red;
     height: 500px;
     margin: 3px;
+    font-family: 'Rubik';
     /*margin: 0 auto;*/
 }
 
@@ -41,11 +59,12 @@ h2, h3{
 }
 .vertical-text {
 	transform: rotate(90deg);
+	margin-left: 30px;
 }
 
 .box-headline {
 	color: black;
-	font-size: 25px;
+	font-size: 24px;
 	padding-top: 40px;
 	text-align: left;
 	padding-left: 10px;
@@ -59,9 +78,10 @@ h2, h3{
 }
 .box-text {
 	color: black;
-	font-size: 18px;
+	font-size: 15px;
 	padding: 30px 10px;
 	text-align:left;
+	font-family: 'Rubik-Light';
 }
 
 @media only screen and (max-width: 600px){
