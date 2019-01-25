@@ -9,7 +9,7 @@
 }
 
 .client-container{
-	width: 80%;
+	width: 65%;
 	margin: 0 auto;
 	background-color: #efeeeb;
 	padding-bottom: 50px;
@@ -38,6 +38,12 @@
 
 }
 
+@media only screen and (max-width: 1300px){
+	.client-container{
+		width: 90%;
+	}
+}
+
 @media only screen and (max-width: 600px){
 	.container{
 		width: 90%;
@@ -45,6 +51,7 @@
 	.client{
 	width: 50px;
 	height: 50px;
+		padding: 30px;
 }
 	.client-container{
 		width: 100%;
@@ -61,21 +68,12 @@
     margin: 0 auto;
     margin-top: 50px;
 
-
 }
-
-
-
-
-
-@media only screen and (max-width: 600px) {
-	.homepage-client-container{
+.homepage-client-container{
 		width: 100%;
 	}
 
-	.client {
-		padding: 30px;
-	}
-}
+
+
 
 
