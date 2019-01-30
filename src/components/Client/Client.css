@@ -9,7 +9,7 @@
 }
 
 .client-container{
-	width: 65%;
+	max-width: 79%;
 	margin: 0 auto;
 	background-color: #efeeeb;
 	padding-bottom: 50px;
