@@ -97,7 +97,7 @@ class Home extends React.Component{
 	  </div>
 
 	  <div id='homepage-clients'>
-		  <div className='client-container'>
+		  <div className='container'>
 			  <h2 className='headline-style-clients'>POWERED BY RED AD TECH</h2>
 			  <Client/>
 	  	  </div>
