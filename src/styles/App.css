@@ -66,6 +66,10 @@ html, body {
   font-weight: bold;
   letter-spacing: 10px;
   background: linear-gradient(to top, #fc4061 0%, #fc5c48 100%);
+  background: -ms-linear-gradient(to top, #fc4061 0%, #fc5c48 100%);
+  background: -moz-linear-gradient(to top, #fc4061 0%, #fc5c48 100%);
+  background: -o-linear-gradient(to top, #fc4061 0%, #fc5c48 100%);
+  background: -webkit-linear-gradient(to top, #fc4061 0%, #fc5c48 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: -20px;
