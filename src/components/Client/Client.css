@@ -72,6 +72,10 @@
 .homepage-client-container{
 		width: 100%;
 	}
+	.headline-style-clients{
+		/*font-size: 30px;*/
+		letter-spacing: 6px;
+	}
 
 
 
