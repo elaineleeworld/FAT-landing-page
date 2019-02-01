@@ -83,11 +83,11 @@ html, body {
   letter-spacing: 10px;
   color: #FF0000\9;
   background: linear-gradient(to top, #fc4061 0%, #fc5c48 100%);
-  background: -ms-linear-gradient(to top, #fc4061 0%, #fc5c48 100%);
+  background: -ms-linear-gradient(0);
   background: -moz-linear-gradient(to top, #fc4061 0%, #fc5c48 100%);
   background: -o-linear-gradient(to top, #fc4061 0%, #fc5c48 100%);
   background: -webkit-linear-gradient(to top, #fc4061 0%, #fc5c48 100%);
-  filter: progid:DXImageTransform.Microsoft.Gradient(to top, #fc4061 0%, #fc5c48 100%);
+  filter: progid:DXImageTransform.Microsoft.Gradient(0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -ms-background-clip: text;
@@ -96,12 +96,19 @@ html, body {
   margin-bottom: 20px;
 }
 
-@media screen\0 {
+/*@media screen and (min-width: 0\0) {
     .hero-text-one {
-        color: #FF0000;
+        background: linear-gradient(#F82E48);
        
     }
-}
+}*/
+
+/*@media all and (-ms-high-contrast: none) {
+        .hero-text-one {
+        background: linear-gradient(#F82E48);
+       
+    }
+}*/
 .hero-text-two{
   color: #a1a09e;
   font-size: 19px;
