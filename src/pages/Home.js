@@ -17,10 +17,10 @@ import BrowseGithub from '../images/browse_github.png'
 import Peeps from '../images/peeps.png'
 
 
-import SharpGroteskMedium24 from '../fonts/SharpGroteskMedium24.ttf'
-import RubikLight from '../fonts/Rubik-Light.ttf'
-import GothamLight from '../fonts/Gotham-Light.ttf'
-import RubikRegular from '../fonts/Rubik-Regular.ttf'
+import SharpGroteskMedium24 from '../fonts/SharpGroteskMedium24.woff'
+import RubikLight from '../fonts/Rubik-Light.woff'
+import GothamLight from '../fonts/Gotham-Light.woff'
+import RubikRegular from '../fonts/Rubik-Regular.woff'
 
 
 
