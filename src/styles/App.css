@@ -62,7 +62,7 @@ html, body {
 
 .hero-text-one {
   /*color: red;*/
-  font-family: 'SharpGroteskMedium24';
+  font-family: 'SharpGroteskMedium24', 'Rubik-Light';
   font-size: 60px;
   font-weight: bold;
   letter-spacing: 10px;
