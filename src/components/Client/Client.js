@@ -1,6 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Row, Col } from 'react-flexbox-grid';
 import './Client.css';
 
 class Client extends React.Component {
@@ -35,7 +33,7 @@ class Client extends React.Component {
       {myClient.map(function(client, index){
          return (
               <div key={index} className="client">
-                <img className="client-image" src={client.img} />
+                <img className="client-image" src={client.img} alt='client img' />
              </div>
             )
        })}

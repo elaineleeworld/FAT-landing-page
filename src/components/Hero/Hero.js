@@ -1,6 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
-
 import './Hero.css';
 import PlusSign from '../../images/plus-sign.png'
 
@@ -55,7 +53,7 @@ class BracketsList extends React.Component {
              
        <div style={display} key={index} className='brackets-list'>
         <p className='bracket-text'>{bracket.text}</p>
-               <img src={bracket.img} className='bracket-img'/>
+               <img src={bracket.img} className='bracket-img' alt='bracket img'/>
                   </div>
     
             

@@ -1,15 +1,11 @@
-import React, {Component} from 'react';
-import createBrowserHistory from 'history';
+import React from 'react';
 import { Redirect, withRouter } from 'react-router';
-
-import { render } from 'react-dom';
 import './NavBar.css';
 import HamburgerButton from '../Hamburger/HamburgerButton';
 import red_logo_2 from '../../images/red_logo2.png'
 import { Link } from 'react-router-dom';
 
-import GothamLight from '../../fonts/Gotham-Light.woff'
-import RubikRegular from '../../fonts/Rubik-Regular.woff'
+
 
 class NavBar extends React.Component{
 	constructor(props){
@@ -144,7 +140,7 @@ handleScrollAbout(){
 				</ul>
 			</div>
 			<div className='hamburger'>
-		          	<HamburgerButton click={this. props.hamburgerToggleClickHandler}/>
+		          <HamburgerButton click={this.props.hamburgerToggleClickHandler}/>
 		    </div>
 		</nav>
 	</header>

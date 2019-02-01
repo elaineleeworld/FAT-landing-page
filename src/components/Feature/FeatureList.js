@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+
 import { Row, Col } from 'react-flexbox-grid';
 import './FeatureList.css';
 import LessArrow from '../../images/red_arrow_less.png'
@@ -85,7 +85,7 @@ class FeatureList extends React.Component {
           
              <Row className="feature" style={style}>
             <Col key={index} xs={12} first="xs" last="sm">
-               <img src={feature.img} />
+               <img src={feature.img} alt='feature list' />
                 </Col>
              <Col xs={12}>
                 <Row between="lg">

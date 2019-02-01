@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
+
 import { Row, Col } from 'react-flexbox-grid';
 import './Box.css';
 

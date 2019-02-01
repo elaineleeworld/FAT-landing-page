@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
-import Button from 'react-button-component';
+
 import cta from '../images/cta.png'
 
 
-const CustomizedButton = Button.extend`
-  background: url("./../images/cta.png");
+// const CustomizedButton = Button.extend`
+//   background: url("./../images/cta.png");
 
-  :hover {
-  	background-color: #ff0000;
-  }
-`
+//   :hover {
+//   	background-color: #ff0000;
+//   }
+// `
 
 
 class DownloadButton extends Component {

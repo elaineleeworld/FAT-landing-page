@@ -1,26 +1,15 @@
-import React, { forwardRef, Component } from 'react';
+import React from 'react';
 import DownloadButton from '../styledComponents/DownloadButton.js';
-import { Grid } from 'react-flexbox-grid';
 import BracketsList from '../components/Hero/Hero.js';
-import Footer from '../components/Footer/Footer.js';
-import FeatureList from '../components/Feature/FeatureList.js';
 import TopFeatures from '../components/TopFeatures/TopFeatures.js';
 import Box from '../components/Box/Box.js';
 import Client from '../components/Client/Client.js';
-import Collapsible from 'react-collapsible';
-import MoreArrow from '../images/red_arrow_more.png'
-import LessArrow from '../images/red_arrow_less.png'
-import BG from '../images/bg_image_top.jpg'
-import PlusSign from '../images/plus-sign.png'
 import DownloadTemplate from '../images/download_template.png'
 import BrowseGithub from '../images/browse_github.png'
-import Peeps from '../images/peeps.png'
 
 
-import SharpGroteskMedium24 from '../fonts/SharpGroteskMedium24.woff'
-import RubikLight from '../fonts/Rubik-Light.woff'
-import GothamLight from '../fonts/Gotham-Light.woff'
-import RubikRegular from '../fonts/Rubik-Regular.woff'
+
+
 
 
 
@@ -48,9 +37,9 @@ class Home extends React.Component{
 	
 	
 	render(){
-		const { ref, props } = React.forwardRef((props, ref) => ({ props, ref }));
+		// const { ref, props } = React.forwardRef((props, ref) => ({ props, ref }));
 
-		const style = this.state.hideElement ? { display: 'none'} : {};
+		// const style = this.state.hideElement ? { display: 'none'} : {};
 
 		return(
 
