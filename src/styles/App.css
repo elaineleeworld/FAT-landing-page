@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'SharpGroteskMedium24';
-  src: local("SharpGroteskMedium24"), url(../fonts/SharpGroteskMedium24.otf) format("opentype"); }
+  src: local("SharpGroteskMedium24"), url(../fonts/SharpGroteskMedium24.ttf) format("truetype"); }
 
 body {
   margin: 0;
