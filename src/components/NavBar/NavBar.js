@@ -8,8 +8,8 @@ import HamburgerButton from '../Hamburger/HamburgerButton';
 import red_logo_2 from '../../images/red_logo2.png'
 import { Link } from 'react-router-dom';
 
-import GothamLight from '../../fonts/Gotham-Light.ttf'
-import RubikRegular from '../../fonts/Rubik-Regular.ttf'
+import GothamLight from '../../fonts/Gotham-Light.woff'
+import RubikRegular from '../../fonts/Rubik-Regular.woff'
 
 class NavBar extends React.Component{
 	constructor(props){
