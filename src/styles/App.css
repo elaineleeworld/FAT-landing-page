@@ -74,6 +74,8 @@ html, body {
   filter: progid:DXImageTransform.Microsoft.Gradient to top, #fc4061 0%, #fc5c48 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
   margin-top: -20px;
   margin-bottom: 20px; }
 
