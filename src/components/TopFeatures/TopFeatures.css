@@ -26,7 +26,11 @@
     display:inline-block;
     /*margin: 0 auto;*/
     width: 25%;
-    font-family: 'Rubik-Light';
+    font-family: 'Rubik', 'Rubik:300';
+}
+
+.features-container {
+  text-align:center;
 }
 
 @media only screen and (max-width: 960px){
@@ -46,7 +50,7 @@
 }
 
 #headline-style-topfeatures {
-    font-family: 'SharpGroteskMedium24';
+    font-family: 'SharpGroteskMedium24', 'Rubik';
     font-size: 36px;
     letter-spacing: 6px;
 
