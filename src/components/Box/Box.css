@@ -78,7 +78,7 @@ h2, h3{
 	
 }
 .box-headline-container{
-	height: 140px;
+	height: 150px;
 }
 
 .box-subheadline{
@@ -87,6 +87,7 @@ h2, h3{
 	margin-top: -20px;
 	font-family: 'Rubik';
 	position:absolute;
+	overflow-wrap: break-word;
 }
 
 .box-text {
@@ -114,11 +115,12 @@ h2, h3{
 		margin-left: 39px;
 	}
 	.box-headline {
-		font-size: 16px;
+		font-size: 15px;
 	}
 	.box-subheadline{
 		font-size: 9px;
 		margin-top: -8px;
+		position:relative;
 	}
 	.box-text{
 		font-size: 13px;
