@@ -79,13 +79,16 @@ h2, h3{
 	font-size: 12px;
 	margin-top: -20px;
 	font-family: 'Rubik';
+	position:absolute;
 }
+
 .box-text {
 	color: black;
 	font-size: 15px;
 	padding: 30px 10px;
 	text-align:left;
 	font-family: 'Rubik-Light';
+	vertical-align:bottom;
 }
 
 @media only screen and (max-width: 600px){
@@ -105,6 +108,10 @@ h2, h3{
 	}
 	.box-headline {
 		font-size: 17px;
+	}
+	.box-subheadline{
+		font-size: 9px;
+		margin-top: -8px;
 	}
 	.box-text{
 		font-size: 13px;

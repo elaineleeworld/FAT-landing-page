@@ -55,9 +55,13 @@ class Box extends React.Component {
                    
                     <Col xs={12}>
                       <p className='box-label vertical-text'>{box.label}</p>
+                      
                         <p className='box-headline'>{box.headline}</p>
+                       
                         <p className='box-subheadline'>{box.subheadline}</p>
+                       
                         <p className='box-text'>{box.text}</p>
+                       
                     </Col>
                 </Row>
             </Col>
