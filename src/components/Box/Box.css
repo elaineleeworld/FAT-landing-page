@@ -73,6 +73,9 @@ h2, h3{
 	font-family: 'Rubik';
 	
 }
+.box-headline-container{
+	height: 140px;
+}
 
 .box-subheadline{
 	color: black;
@@ -107,7 +110,7 @@ h2, h3{
 		margin-left: 39px;
 	}
 	.box-headline {
-		font-size: 17px;
+		font-size: 16px;
 	}
 	.box-subheadline{
 		font-size: 9px;
