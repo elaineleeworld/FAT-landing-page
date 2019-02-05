@@ -77,9 +77,9 @@ class TopFeatures extends React.Component {
                 <Row between="lg">
                    
                     <Col xs={12}>
-                      <h2>{feature.label}</h2>
-                        <h3>{feature.headline}</h3>
-                        <p>{feature.text}</p>
+                        <h2 className='feature-label'>{feature.label}</h2>
+                        <h3 className='feature-headline'>{feature.headline}</h3>
+                        <p className='feature-text'>{feature.text}</p>
                     </Col>
                 </Row>
             </Col>

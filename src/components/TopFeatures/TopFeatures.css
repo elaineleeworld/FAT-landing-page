@@ -48,6 +48,15 @@
 	}
    
 }
+.feature-label{
+  font-size: 24px;
+}
+.feature-headline{
+  font-size: 18px;
+}
+.feature-text{
+  font-size: 14px;
+}
 
 #headline-style-topfeatures {
     font-family: 'SharpGroteskMedium24', 'Rubik';
