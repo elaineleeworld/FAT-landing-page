@@ -72,19 +72,21 @@ h2, h3{
 	font-size: 24px;
 	padding-top: 40px;
 	text-align: left;
-	padding-left: 10px;
-	padding-right: 10px;
+	/*padding-left: 10px;
+	padding-right: 10px;*/
 	font-family: 'Rubik';
 	
 }
 .box-headline-container{
 	height: 150px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .box-subheadline{
 	color: black;
 	font-size: 12px;
-	margin-top: -20px;
+	margin-top: -11px;
 	font-family: 'Rubik';
 	position:absolute;
 	overflow-wrap: break-word;
@@ -118,11 +120,12 @@ h2, h3{
 		font-size: 15px;
 	}
 	.box-subheadline{
-		font-size: 9px;
-		margin-top: -22px;
-		position:relative;
+		font-size: 8.5px;
+		/*margin-top: 0px;
+		position:relative;*/
 	}
 	.box-text{
 		font-size: 13px;
+		padding: -5px 10px;
 	}
 }

@@ -57,8 +57,9 @@ class Box extends React.Component {
                       <p className='box-label vertical-text'>{box.label}</p>
                         <div className='box-headline-container'>
                         <p className='box-headline'>{box.headline}</p>
-                        </div>
                         <p className='box-subheadline'>{box.subheadline}</p>
+                        </div>
+                        
                        
                         <p className='box-text'>{box.text}</p>
                        
