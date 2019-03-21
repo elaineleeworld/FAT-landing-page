@@ -129,7 +129,7 @@ class NavBar extends React.Component {
 								<Link to="/">ABOUT</Link>
 							</li>
 							<li>
-								<Link to="/showcase">SHOWCASE</Link>
+								<a href="http://sizzle.wearered.com/">SHOWCASE</a>
 							</li>
 						</ul>
 					</div>
