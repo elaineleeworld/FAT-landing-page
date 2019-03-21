@@ -119,6 +119,18 @@ body {
 		line-height: 28px;
 	}
 }
+@media only screen and (max-width: 1220px) {
+	.hero-headline {
+		font-size: 32px;
+	}
+	.hero-text-one {
+		font-size: 50px;
+	}
+	.hero-text-two {
+		font-size: 18px;
+		line-height: 27px;
+	}
+}
 @media only screen and (max-width: 1000px) {
 	.hero-headline {
 		font-size: 29px;
@@ -128,11 +140,6 @@ body {
 	}
 	.hero-text-two {
 	}
-	/* p.bracket-text{
-    width: 20%;
-    font-size: 15px;
-    transform: translate(19%, -7%);
-  }*/
 }
 @media only screen and (max-width: 800px) {
 	.hero-headline {

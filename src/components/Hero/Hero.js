@@ -50,7 +50,7 @@ class BracketsList extends React.Component {
 						<img src={bracketImg} className="bracket-img" alt="bracket img" />
 					</div>
 				</div>
-				<div>
+				<div className="bracket-row">
 					<img src={PlusSign} onClick={this.showBrackets} className="plus-sign" alt="plus-sign" />
 				</div>
 				<div className="bracket-row">
