@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import PlusSign from '../../images/plus-sign.png'
+import bracketImg from '../../images/brackets.png'
 
 class BracketsList extends React.Component {
 	constructor(props) {
@@ -22,36 +23,46 @@ class BracketsList extends React.Component {
 	render() {
 		const display = this.state.show ? { visibility: 'visible' } : { visibility: 'hidden' }
 
-		const myBracket = [
+		const brackets = [
 			{
-				img: require('../../images/brackets.png'),
 				text: 'Templates optimized for load-speed, compatible with all ad networks.'
 			},
 			{
-				img: require('../../images/brackets.png'),
 				text: 'Open-source components, makes authoring & customization easy.'
 			},
 			{
-				img: require('../../images/brackets.png'),
 				text: 'Compiled builds, saves k-weight for your creative.'
 			},
 			{
-				img: require('../../images/brackets.png'),
 				text: 'Flexible tools, fits your process & enable automation.'
 			}
 		]
 
 		return (
 			<div className="bracket-container">
-				{myBracket.map(function(bracket, index) {
-					return (
-						<div style={display} key={index} className="brackets-list">
-							<p className="bracket-text">{bracket.text}</p>
-							<img src={bracket.img} className="bracket-img" alt="bracket img" />
-						</div>
-					)
-				})}
-				<img src={PlusSign} onClick={this.showBrackets} className="plus-sign" alt="plus-sign" />
+				<div className="bracket-row">
+					<div style={display} className="brackets-list">
+						<div className="bracket-text">{brackets[0].text}</div>
+						<img src={bracketImg} className="bracket-img" alt="bracket img" />
+					</div>
+					<div style={display} className="brackets-list">
+						<div className="bracket-text">{brackets[1].text}</div>
+						<img src={bracketImg} className="bracket-img" alt="bracket img" />
+					</div>
+				</div>
+				<div>
+					<img src={PlusSign} onClick={this.showBrackets} className="plus-sign" alt="plus-sign" />
+				</div>
+				<div className="bracket-row">
+					<div style={display} className="brackets-list">
+						<div className="bracket-text">{brackets[2].text}</div>
+						<img src={bracketImg} className="bracket-img" alt="bracket img" />
+					</div>
+					<div style={display} className="brackets-list">
+						<div className="bracket-text">{brackets[3].text}</div>
+						<img src={bracketImg} className="bracket-img" alt="bracket img" />
+					</div>
+				</div>
 			</div>
 		)
 	}
