@@ -36,12 +36,22 @@ class Home extends React.Component {
 			<div className="homepage">
 				<div id="homepage-hero">
 					<div className="container">
-						<p className="hero-headline">Light-weight, scalable, ES6</p>
+						<div className="hero-headline">Light-weight, scalable, ES6</div>
 						<div className="hero-text-one">AD DEVELOPMENT</div>
-						<p className="hero-text-two">
-							Author hot-rod creative — Build fewer units, deliver bigger buys: <br />
-							Many targets&nbsp;&nbsp;*&nbsp;&nbsp;Many sizes&nbsp;&nbsp;*&nbsp;&nbsp;Many devices
-						</p>
+						<div className="hero-text-two">
+							<div className="hero-text-three">
+								<div className="htt-item">Hot-rod creative</div>
+								<div className="htt-mult">—</div>
+								<div className="htt-item">build fewer units, deliver bigger buys:</div>
+							</div>
+							<div className="hero-text-three">
+								<div className="htt-item">Many targets</div>
+								<div className="htt-item htt-mult">✕</div>
+								<div className="htt-item">Many sizes</div>
+								<div className="htt-item htt-mult">✕</div>
+								<div className="htt-item">Many devices</div>
+							</div>
+						</div>
 						<BracketsList />
 						<br />
 						<br />
