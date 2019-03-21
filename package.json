@@ -31,6 +31,11 @@
 		"eject": "react-scripts eject"
 	},
 	"devDependencies": {
-		"gh-pages": "^1.2.0"
+		"gh-pages": "^1.2.0",
+		"babel-eslint": "^8.2.1",
+		"eslint": "^4.16.0",
+		"eslint-config-prettier": "^2.9.0",
+		"eslint-plugin-prettier": "^2.5.0",
+		"prettier": "^1.10.2"
 	}
 }

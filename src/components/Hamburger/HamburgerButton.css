@@ -1,5 +1,5 @@
 .toggle-button {
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	height: 24px;
@@ -7,7 +7,7 @@
 	background: transparent;
 	border: none;
 	padding: 0;
-	box-sizing:border-box;
+	box-sizing: border-box;
 	display: none;
 }
 
@@ -22,7 +22,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-   .toggle-button {
-   	display: flex;
-   }
+	.toggle-button {
+		display: flex;
+	}
 }

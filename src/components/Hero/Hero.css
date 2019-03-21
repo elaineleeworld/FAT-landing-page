@@ -1,76 +1,72 @@
-
-.bracket-container{
-
+.bracket-container {
 }
-.plus-sign{
-  /*position: absolute;*/
-  /*top:80%;
+.plus-sign {
+	/*position: absolute;*/
+	/*top:80%;
   left: 50%;*/
-  transform: translate(-13%,-895%);  
+	transform: translate(-13%, -895%);
 }
 
-.bracket-img{
+.bracket-img {
 	width: 95%;
 	margin-bottom: 30px;
 }
 
 .bracket-text {
 	position: absolute;
-    /*left: 50%;*/
-    transform: translate(12%, 53%);
-    width: 22%;
-    /*margin-top: 40px;*/
-    font-family: 'Rubik-Light';
+	/*left: 50%;*/
+	transform: translate(12%, 53%);
+	width: 22%;
+	/*margin-top: 40px;*/
+	font-family: 'Rubik-Light';
 }
 .brackets-list {
 	width: 50%;
-	display:inline-block;
-
+	display: inline-block;
 }
-@media only screen and (max-width: 1500px){
-	.plus-sign{
-		transform: translate(-13%,-855%);  
+@media only screen and (max-width: 1500px) {
+	.plus-sign {
+		transform: translate(-13%, -855%);
 	}
-	.bracket-text{
+	.bracket-text {
 		width: 25%;
 		transform: translate(14%, 50%);
 	}
 }
-@media only screen and (max-width: 1300px){
-	.plus-sign{
-		transform: translate(-13%,-855%);  
+@media only screen and (max-width: 1300px) {
+	.plus-sign {
+		transform: translate(-13%, -855%);
 	}
-	.bracket-text{
+	.bracket-text {
 		width: 24%;
 		transform: translate(30%, -0%);
 	}
 }
-@media only screen and (max-width: 1000px){
-	.plus-sign{
-		transform: translate(-13%,-725%);  
+@media only screen and (max-width: 1000px) {
+	.plus-sign {
+		transform: translate(-13%, -725%);
 	}
-	.bracket-text{
+	.bracket-text {
 		width: 25%;
-    font-size: 15px;
-    transform: translate(19%, -7%);
+		font-size: 15px;
+		transform: translate(19%, -7%);
 	}
 }
-@media only screen and (max-width: 800px){
-	.plus-sign{
-		transform: translate(-13%,-625%);  
+@media only screen and (max-width: 800px) {
+	.plus-sign {
+		transform: translate(-13%, -625%);
 	}
 	.bracket-text {
 		font-size: 12px;
 		width: 28%;
 	}
 }
-@media only screen and (max-width: 600px){
-	.plus-sign{
-		transform: translate(-13%,-525%);  
+@media only screen and (max-width: 600px) {
+	.plus-sign {
+		transform: translate(-13%, -525%);
 	}
-	.bracket-text{
+	.bracket-text {
 		font-size: 12px;
 		transform: translate(20%, -22%);
 	}
 }
-
