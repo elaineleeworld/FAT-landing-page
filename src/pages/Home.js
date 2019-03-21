@@ -36,11 +36,11 @@ class Home extends React.Component {
 			<div className="homepage">
 				<div id="homepage-hero">
 					<div className="container">
-						<p className="hero-headline">Light-weight, open-source, ES6</p>
-						<p className="hero-text-one">AD DEVELOPMENT</p>
+						<p className="hero-headline">Light-weight, scalable, ES6</p>
+						<div className="hero-text-one">AD DEVELOPMENT</div>
 						<p className="hero-text-two">
-							Author the best creative. Deliver big programmatic buys: <br />
-							Hundreds of targets, many sizes, and many devices.
+							Author hot-rod creative — Build fewer units, deliver bigger buys: <br />
+							Many targets&nbsp;&nbsp;*&nbsp;&nbsp;Many sizes&nbsp;&nbsp;*&nbsp;&nbsp;Many devices
 						</p>
 						<BracketsList />
 						<br />
@@ -91,8 +91,8 @@ class Home extends React.Component {
 				<div id="homepage-about-red">
 					<div className="container">
 						<p className="copy-text-about">
-							RED has been building display ads for over a decade. We were the first to deliver HTML 5. We innovated dynamic. We license our
-							own CMP, Velvet.
+							RED has been building display ads for over a decade. We were the first to deliver HTML 5. We innovated dynamic. We maintain &
+							license our own Content Management Platform: <a href="http://velvet.tech">Velvet</a>.
 						</p>
 						<p className="copy-text-about">We believe ads should load fast & look amazing - whether our agency build them, or yours.</p>
 					</div>

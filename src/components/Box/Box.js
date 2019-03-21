@@ -2,6 +2,10 @@ import React from 'react'
 
 import { Row, Col } from 'react-flexbox-grid'
 import './Box.css'
+import oneBg from './images/1.png'
+import twoBg from './images/2.png'
+import threeBg from './images/3.png'
+import fourBg from './images/4.png'
 
 class Box extends React.Component {
 	constructor(props) {
@@ -12,29 +16,41 @@ class Box extends React.Component {
 	render() {
 		const myBox = [
 			{
-				number: '1',
+				number: {
+					src: oneBg,
+					alt: 'Step 1'
+				},
 				label: 'TEMPLATE',
-				headline: 'Start with a standard DCM template.',
-				text: 'Need other ad-networks? No problem, we have templates for DC Studio, Sizmek, Flashtalking & more.'
+				headline: 'Start with a standard template.',
+				text: 'Or generate a specific template for Google, Sizmek, Flashtalking & more.'
 			},
 			{
-				number: '2',
-				label: 'TOOLING',
-				headline: 'Use the Creative Server.',
-				text: 'Zero-configuration. Webpack/ES6, watch processes, localhosts, & compiling.'
-			},
-			{
-				number: '3',
+				number: {
+					src: twoBg,
+					alt: 'Step 2'
+				},
 				label: 'AUTHORING',
-				headline: 'Use the FAT Framework & Greensock.',
+				headline: 'Write with ES6 & Greensock.',
 				subheadline: '(or use your preferred libraries)',
 				text: "Use your budgets for DESIGN, not tooling -- anything that's possible in an IAB container can be built!"
 			},
 			{
-				number: '4',
+				number: {
+					src: threeBg,
+					alt: 'Step 3'
+				},
+				label: 'TOOLING',
+				headline: 'Creative Server does hard stuff.',
+				text: 'Zero-configuration Webpack/ES6, watch-processes, localhosts, & packaging.'
+			},
+			{
+				number: {
+					src: fourBg,
+					alt: 'Step 4'
+				},
 				label: 'DELIVERIES',
 				headline: 'Compile & deliver to traffic.',
-				text: 'Generate all of your targets without code redundancy!'
+				text: 'Enjoy consistency & performance, at scale, without code redundancy!'
 			}
 		]
 		return (
@@ -43,7 +59,9 @@ class Box extends React.Component {
 					return (
 						<Row key={index} className="box">
 							<Col xs={12} first="xs" last="sm">
-								<p className="box-number">{box.number}</p>
+								<div className="box-number">
+									<img src={box.number.src} alt={box.number.alt} />
+								</div>
 							</Col>
 							<Col xs={12}>
 								<Row between="lg">

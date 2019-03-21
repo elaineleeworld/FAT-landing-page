@@ -46,7 +46,7 @@ class Footer extends Component {
 
 					<div className="footer__logo">
 						<img src={FooterLogo} className="footer__red_logo" alt="footer red logo" />
-						<p className="footer__copyright">&copy; 2018 RED. ALL RIGHTS RESERVED</p>
+						<p className="footer__copyright">&copy; 2019 RED. ALL RIGHTS RESERVED</p>
 					</div>
 				</div>
 			</footer>

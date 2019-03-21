@@ -25,19 +25,19 @@ class BracketsList extends React.Component {
 		const myBracket = [
 			{
 				img: require('../../images/brackets.png'),
-				text: 'Templates are compatible with all ad networks.'
+				text: 'Templates optimized for load-speed, compatible with all ad networks.'
 			},
 			{
 				img: require('../../images/brackets.png'),
-				text: 'Battle-tested components make standard & dynamic units easy.'
+				text: 'Open-source components, makes authoring & customization easy.'
 			},
 			{
 				img: require('../../images/brackets.png'),
-				text: 'Auto-compiling builds save you the most k-weight for your creative.'
+				text: 'Compiled builds, saves k-weight for your creative.'
 			},
 			{
 				img: require('../../images/brackets.png'),
-				text: 'Flexible tools enable automation & simplify production.'
+				text: 'Flexible tools, fits your process & enable automation.'
 			}
 		]
 

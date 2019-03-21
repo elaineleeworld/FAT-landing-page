@@ -39,24 +39,21 @@ class TopFeatures extends React.Component {
 		const myFeature = [
 			{
 				img: require('../../images/Webpack.png'),
-				label: 'Easy ES6/WEBPACK',
+				label: 'ES6/WEBPACK',
 				headline: 'CODE IS POWERFUL',
-				text:
-					'Javascript is more powerful than platform solutions. Better packaging / load-optimization. Integrates with existing systems / future-proof.'
+				text: ['Scalable, modular, testable', 'Flexible integration / systematic', 'Packaging & load-optimization']
 			},
 			{
 				img: require('../../images/GithubNPM.png'),
 				label: 'Open-Source',
 				headline: 'JOIN THE COMMUNITY',
-				text:
-					'Benefits from standards. Source code is often shared between regions. No competitive edge in tooling. Version-control improves stability.'
+				text: ['Well-vetted, evolving code', 'Version-control improves stability', 'Define industry standards']
 			},
 			{
 				img: require('../../images/Modular.png'),
 				label: 'Modular',
-				headline: 'USE EXISTING COMPONENTS',
-				text:
-					'Benefits from standards. Source code is often shared between regions. No competitive edge in tooling. Version-control improves stability.'
+				headline: 'USE COMPONENTS',
+				text: ['Less code, more function', 'Better organized projects', 'Extensible']
 			}
 		]
 		return (
@@ -72,7 +69,15 @@ class TopFeatures extends React.Component {
 									<Col xs={12}>
 										<h2 className="feature-label">{feature.label}</h2>
 										<h3 className="feature-headline">{feature.headline}</h3>
-										<p className="feature-text">{feature.text}</p>
+										<ul className="feature-texts">
+											{feature.text.map((text, i) => {
+												return (
+													<li key={`text-${i}`} className="feature-text">
+														{text}
+													</li>
+												)
+											})}
+										</ul>
 									</Col>
 								</Row>
 							</Col>

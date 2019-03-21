@@ -41,44 +41,38 @@ class FeatureList extends React.Component {
 			{
 				img: require('../../images/GASP.png'),
 				label: 'GSAP',
-				headline: 'GREENSOCK ANIMATION PLATFORM.',
-				text:
-					'Greensock Animation Platform has been an industry-standard for over a decade. Efficient & powerful animation framework.  Ubiquitously cached and usually dismissed against k-size.'
+				headline: 'GREENSOCK ANIMATION PLATFORM',
+				text: ['Simple, powerful framework', 'The standard for over a decade', 'Ubiquitously cached, dismissed k-size']
 			},
 			{
 				img: require('../../images/BINARY.png'),
 				label: 'Binary Compiling',
-				headline: 'IMAGES & FONTS IN A SINGLE PAYLOAD.',
-				text:
-					'Images & fonts are packaged as a single payload. Base64 + gzip adds bloat. Fewer network requests = faster load. Zero configuration. Just import your assets.  FAT handles the packaging.'
+				headline: 'IMAGES & FONTS IN A SINGLE PAYLOAD',
+				text: ['25% less bloat than base64 + gzip', 'Fewer network requests = faster load', 'Zero configuration']
 			},
 			{
 				img: require('../../images/IAB.png'),
 				label: 'IAB Specs',
-				headline: 'STANDARDS COMPLIANT.',
-				text:
-					'FAT is designed for IAB. 30k boilerplate. The rest is for creative. Fast-to-load. Only 2 payload requests (text & binary). All components are designed for banners.'
+				headline: 'STANDARDS COMPLIANT',
+				text: ['30k core, the rest is for creative', 'Fast: Only 2 payload requests', 'Components designed for banners']
 			},
 			{
 				img: require('../../images/DYNAMIC.png'),
 				label: 'Dynamic',
-				headline: 'BUILD PROGRAMMATICALLY.',
-				text:
-					'Easily build dynamic units for programmatic markets. Reduced code/asset redundancy across versions/sizes. Smart auto-fitting text, alignment, element-positioning utilities.'
+				headline: 'BUILD PROGRAMMATICALLY',
+				text: ['Text-fit & layout utilities', 'Manage many dynamic states', 'Reduce code across versions / sizes']
 			},
 			{
 				img: require('../../images/SCALE.png'),
 				label: 'Scale vs Scare',
-				headline: 'SYSTEMS SOLVE COMPLEXITY.',
-				text:
-					'Users can decide their sweet-spot of complexity.  Zero-code redundancy using dynamic programming concepts. Simplicity: Hard-coded creative per size.'
+				headline: 'SYSTEMS SOLVE COMPLEXITY',
+				text: ['Strong patterns for volume', 'Creative control is maintained', 'Faster loading ads']
 			},
 			{
 				img: require('../../images/STANDARDIZED.png'),
 				label: 'Standardized & Flexible',
 				headline: 'ITERATE & DELIVER FASTER.',
-				text:
-					"Resource scheduling is easy with consistent patterns. Everybody can work with everybody's files. Capabilities are not compromised."
+				text: ['Schedule with confidence', 'Shareable / workable code', 'Consistent quality']
 			}
 		]
 		return (
@@ -95,7 +89,15 @@ class FeatureList extends React.Component {
 									<Col xs={12}>
 										<h2 className="feature-label">{feature.label}</h2>
 										<h3 className="feature-headline">{feature.headline}</h3>
-										<p className="feature-text">{feature.text}</p>
+										<ul class="feature-texts">
+											{feature.text.map((text, i) => {
+												return (
+													<li key={`text-${i}`} className="feature-text">
+														{text}
+													</li>
+												)
+											})}
+										</ul>
 									</Col>
 								</Row>
 							</Col>
