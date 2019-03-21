@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+   import React, { Component } from 'react';
 import Iframe from 'react-iframe';
 
 
@@ -18,7 +18,7 @@ class Showcase extends Component {
 			<div className='showcase-parent'>
 			   
 			   {/* <div>{renderVideo}</div>*/}
-			   <Iframe url="https://tech.wearered.com/"
+			   <Iframe url="https://sizzle.wearered.com/"
 			        width='100%'
 			        height="1500"
 			        id="red-showcase"
