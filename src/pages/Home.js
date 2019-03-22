@@ -104,7 +104,7 @@ class Home extends React.Component {
 							RED has been building display ads for over a decade. We were the first to deliver HTML 5. We innovated dynamic. We maintain &
 							license our own Content Management Platform: <a href="http://velvet.tech">Velvet</a>.
 						</p>
-						<p className="copy-text-about">We believe ads should load fast & look amazing - whether our agency build them, or yours.</p>
+						<p className="copy-text-about">We believe ads should load fast & look amazing - whether our agency builds them, or yours.</p>
 					</div>
 				</div>
 			</div> // end of homepage
