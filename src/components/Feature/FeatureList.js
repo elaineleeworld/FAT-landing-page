@@ -71,7 +71,7 @@ class FeatureList extends React.Component {
 			{
 				img: require('../../images/STANDARDIZED.png'),
 				label: 'Standardized & Flexible',
-				headline: 'ITERATE & DELIVER FASTER.',
+				headline: 'ITERATE & DELIVER FASTER',
 				text: ['Schedule with confidence', 'Shareable / workable code', 'Consistent quality']
 			}
 		]
