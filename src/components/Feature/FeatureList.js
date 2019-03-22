@@ -2,41 +2,9 @@ import React from 'react'
 
 import { Row, Col } from 'react-flexbox-grid'
 import './FeatureList.css'
-import LessArrow from '../../images/red_arrow_less.png'
-import MoreArrow from '../../images/red_arrow_more.png'
-
-//  function FeaturesList( {features} ){
-//     return features.map(feature => (
-
-//         <div>
-//         <h3>{feature.label}</h3>
-//         <p>{feature.text}</p>
-//         </div>
-//         ))
-//     // console.log('FEATURES', features)
-// }
 
 class FeatureList extends React.Component {
-	constructor(props) {
-		super(props)
-		console.log('THIS.PROPS', this.props)
-		this.state = {
-			hideElement: false,
-			showElement: false
-		}
-	}
-
-	toggleElement() {
-		this.setState((prevState, props) => ({
-			hideElement: !this.state.hideElement, //hide the Less Arrow
-			showElement: !this.state.showElement //show the More Arrow again
-		}))
-	}
-
 	render() {
-		const style = this.state.hideElement ? { display: 'none' } : {}
-		const style2 = this.state.showElement ? { display: 'block' } : {}
-
 		const myFeature = [
 			{
 				img: require('../../images/GASP.png'),
@@ -77,10 +45,9 @@ class FeatureList extends React.Component {
 		]
 		return (
 			<div>
-				<img src={MoreArrow} onClick={this.toggleElement.bind(this)} style={style2} className="red-arrow-more" alt="red arrow less" />
 				{myFeature.map(function(feature, index) {
 					return (
-						<Row key={`key-${index}`} className="feature" style={style}>
+						<Row key={`key-${index}`} className="feature">
 							<Col key={index} xs={12} first="xs" last="sm">
 								<img src={feature.img} alt="feature list" />
 							</Col>
@@ -104,7 +71,6 @@ class FeatureList extends React.Component {
 						</Row>
 					)
 				})}
-				<img src={LessArrow} onClick={this.toggleElement.bind(this)} style={style} className="red-arrow-less" alt="red arrow less" />
 			</div>
 		)
 	}

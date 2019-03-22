@@ -2,40 +2,9 @@ import React from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 import './TopFeatures.css'
 import FeatureList from '../Feature/FeatureList.js'
-import MoreArrow from '../../images/red_arrow_more.png'
-
-//  function FeaturesList( {features} ){
-//     return features.map(feature => (
-
-//         <div>
-//         <h3>{feature.label}</h3>
-//         <p>{feature.text}</p>
-//         </div>
-//         ))
-//     // console.log('FEATURES', features)
-// }
 
 class TopFeatures extends React.Component {
-	constructor(props) {
-		super(props)
-		console.log('THIS.PROPS', this.props)
-		this.state = {
-			open: false,
-			hideElement: false
-		}
-	}
-
-	showMoreFeatures() {
-		console.log('CLICKED')
-		this.setState((prevState, props) => ({
-			open: !this.state.open,
-			hideElement: !this.state.hideElement
-		}))
-	}
-
 	render() {
-		const style = this.state.hideElement ? { display: 'none' } : {}
-
 		const myFeature = [
 			{
 				img: require('../../images/Webpack.png'),
@@ -84,8 +53,7 @@ class TopFeatures extends React.Component {
 						</Row>
 					)
 				})}
-				<img src={MoreArrow} onClick={this.showMoreFeatures.bind(this)} style={style} className="more-red-arrow" alt="more red arrow" />
-				{this.state.open ? <FeatureList /> : null}
+				<FeatureList />
 			</div>
 		)
 	}
