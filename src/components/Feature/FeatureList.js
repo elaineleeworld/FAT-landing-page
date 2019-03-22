@@ -80,7 +80,7 @@ class FeatureList extends React.Component {
 				<img src={MoreArrow} onClick={this.toggleElement.bind(this)} style={style2} className="red-arrow-more" alt="red arrow less" />
 				{myFeature.map(function(feature, index) {
 					return (
-						<Row className="feature" style={style}>
+						<Row key={`key-${index}`} className="feature" style={style}>
 							<Col key={index} xs={12} first="xs" last="sm">
 								<img src={feature.img} alt="feature list" />
 							</Col>
@@ -89,7 +89,7 @@ class FeatureList extends React.Component {
 									<Col xs={12}>
 										<h2 className="feature-label">{feature.label}</h2>
 										<h3 className="feature-headline">{feature.headline}</h3>
-										<ul class="feature-texts">
+										<ul className="feature-texts">
 											{feature.text.map((text, i) => {
 												return (
 													<li key={`text-${i}`} className="feature-text">

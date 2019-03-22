@@ -75,7 +75,7 @@ class MobileOverlay extends React.Component {
 						<Link to="/">About</Link>
 					</li>
 					<li onClick={this.props.click}>
-						<Link to="/showcase">Showcase</Link>
+						<a href="http://sizzle.wearered.com/">Showcase</a>
 					</li>
 				</ul>
 			</nav>
