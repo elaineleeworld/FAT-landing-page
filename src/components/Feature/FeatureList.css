@@ -1,56 +1,54 @@
 @font-face {
-  font-family: 'Gotham-Light';
-  src: local('Gotham-Light'), url(../../fonts/Gotham-Light.woff) format('woff');
+	font-family: 'Gotham-Light';
+	src: local('Gotham-Light'), url(../../fonts/Gotham-Light.woff) format('woff');
 }
 @font-face {
-  font-family: 'Rubik-Light';
-  src: local('Rubik-Light'), url(../../fonts/Rubik-Light.woff) format('woff');
+	font-family: 'Rubik-Light';
+	src: local('Rubik-Light'), url(../../fonts/Rubik-Light.woff) format('woff');
 }
 @font-face {
-  font-family: 'Rubik-Regular';
-  src: local('Rubik-Regular'), url(../../fonts/Rubik-Regular.woff) format('truetype');
+	font-family: 'Rubik-Regular';
+	src: local('Rubik-Regular'), url(../../fonts/Rubik-Regular.woff) format('truetype');
 }
 @font-face {
-  font-family: 'SharpGroteskMedium24';
-  src: local('SharpGroteskMedium24'), url(../../fonts/SharpGroteskMedium24.woff) format('woff');
+	font-family: 'SharpGroteskMedium24';
+	src: local('SharpGroteskMedium24'), url(../../fonts/SharpGroteskMedium24.woff) format('woff');
 }
-
-
 
 .feature {
-    margin: 1em 1em;
-    background: white;
-    padding: 1em 1em;
-    border-radius: 6px;
-    display:inline-block;
-    /*margin: 0 auto;*/
-    width: 25%;
-    font-family: 'Rubik';
+	margin: 1em 1em;
+	background: white;
+	padding: 1em 1em;
+	border-radius: 6px;
+	display: inline-block;
+	/*margin: 0 auto;*/
+	width: 25%;
+	font-family: 'Rubik';
 }
 
-@media only screen and (max-width: 960px){
-    .feature{
-        width: 75%;
-    }
+@media only screen and (max-width: 960px) {
+	.feature {
+		width: 75%;
+	}
 }
 
-@media only screen and (max-width: 600px ){
+@media only screen and (max-width: 600px) {
 	.feature {
 		display: flex;
 		align-items: center;
 		margin: 0 auto;
-        width: 100%;
+		width: 100%;
 	}
 }
 
-.red-arrow-less{
-    margin: 0 auto;
-    display:block;
-    padding-bottom: 30px;
+.red-arrow-less {
+	margin: 0 auto;
+	display: block;
+	padding-bottom: 30px;
 }
 
-.red-arrow-more{
-    display: none;
-    margin: 0 auto;
-    padding: 30px;
+.red-arrow-more {
+	display: none;
+	margin: 0 auto;
+	padding: 30px;
 }

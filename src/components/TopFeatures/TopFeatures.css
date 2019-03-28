@@ -1,81 +1,84 @@
 @font-face {
-  font-family: 'Gotham-Light';
-  src: local('Gotham-Light'), url(../../fonts/Gotham-Light.woff) format('woff');
+	font-family: 'Gotham-Light';
+	src: local('Gotham-Light'), url(../../fonts/Gotham-Light.woff) format('woff');
 }
 @font-face {
-  font-family: 'Rubik-Light';
-  src: local('Rubik-Light'), url(../../fonts/Rubik-Light.woff) format('woff');
+	font-family: 'Rubik-Light';
+	src: local('Rubik-Light'), url(../../fonts/Rubik-Light.woff) format('woff');
 }
 @font-face {
-  font-family: 'Rubik-Regular';
-  src: local('Rubik-Regular'), url(../../fonts/Rubik-Regular.woff) format('woff');
+	font-family: 'Rubik-Regular';
+	src: local('Rubik-Regular'), url(../../fonts/Rubik-Regular.woff) format('woff');
 }
 @font-face {
-  font-family: 'SharpGroteskMedium24';
-  src: local('SharpGroteskMedium24'), url(../../fonts/SharpGroteskMedium24.woff) format('woff');
-  
+	font-family: 'SharpGroteskMedium24';
+	src: local('SharpGroteskMedium24'), url(../../fonts/SharpGroteskMedium24.woff) format('woff');
 }
-
-
 
 .feature {
-    margin: 1em 1em;
-    background: white;
-    padding: 1em 1em;
-    border-radius: 6px;
-    display:inline-block;
-    /*margin: 0 auto;*/
-    width: 25%;
-    font-family: 'Rubik', 'Rubik:300';
+	margin: 1em 1em;
+	background: white;
+	padding: 1em 1em;
+	border-radius: 6px;
+	display: inline-block;
+	/*margin: 0 auto;*/
+	width: 25%;
+	font-family: 'Rubik', 'Rubik:300';
 }
 
 .features-container {
-  text-align:center;
+	text-align: center;
 }
 
-@media only screen and (max-width: 960px){
-    .feature{
-        width: 75%;
-    }
+@media only screen and (max-width: 960px) {
+	.feature {
+		width: 75%;
+	}
 }
 
-@media only screen and (max-width: 600px ){
+@media only screen and (max-width: 600px) {
 	.feature {
 		display: flex;
 		align-items: center;
 		margin: 0 auto;
-        width: 100%;
+		width: 100%;
 	}
-   
 }
-.feature-label{
-  font-size: 24px;
+.feature-label {
+	font-size: 24px;
 }
-.feature-headline{
-  font-size: 18px;
+.feature-headline {
+	font-size: 18px;
 }
-.feature-text{
-  font-size: 14px;
+
+.feature-texts {
+	text-align: left;
+	padding-inline-start: 10px;
+	display: inline-block;
+}
+.feature-text {
+	font-size: 14px;
+	margin: 8px 0px;
 }
 
 #headline-style-topfeatures {
-    font-family: 'SharpGroteskMedium24', 'Rubik';
-    font-size: 36px;
-    letter-spacing: 6px;
+	font-family: 'SharpGroteskMedium24', 'Rubik';
+	font-size: 36px;
+	letter-spacing: 6px;
 }
-@media only screen and (max-width: 600px){
-  #headline-style-topfeatures {
-      font-size: 31px;
-    }
-}
-
-.more-red-arrow{
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 30px;
+@media only screen and (max-width: 600px) {
+	#headline-style-topfeatures {
+		font-size: 31px;
+	}
 }
 
-.features-container{
-    width: 70%;
-    margin: 0 auto;
+.more-red-arrow {
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+.features-container {
+	width: 70%;
+	margin: 0 auto;
 }

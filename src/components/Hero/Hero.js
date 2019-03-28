@@ -1,72 +1,71 @@
-import React from 'react';
-import './Hero.css';
+import React from 'react'
+import './Hero.css'
 import PlusSign from '../../images/plus-sign.png'
-
-
+import bracketImg from '../../images/brackets.png'
 
 class BracketsList extends React.Component {
-    constructor(props){
-        super(props);
-        console.log('THIS.PROPS',this.props)
-        this.state = {
-            show: true
-        }
+	constructor(props) {
+		super(props)
+		console.log('THIS.PROPS', this.props)
+		this.state = {
+			show: true
+		}
 
-        this.showBrackets = this.showBrackets.bind(this);
-    }
-    
-    showBrackets(){
-      this.setState( (prevState, props) => ({
-        show: !this.state.show
-      }))
-    }
-    
-    render(){ 
-       const display = this.state.show ? {visibility: 'visible'} : {visibility: 'hidden'};
+		this.showBrackets = this.showBrackets.bind(this)
+	}
 
+	showBrackets() {
+		this.setState((prevState, props) => ({
+			show: !this.state.show
+		}))
+	}
 
-   const myBracket = [
-            {
-            img: require('../../images/brackets.png'),
-            text: 'Templates are compatible with all ad networks.'
-            },
-            {
-            img: require('../../images/brackets.png'),
-            text: 'Battle-tested components make standard & dynamic units easy.'    
-            },
-            {
-            img: require('../../images/brackets.png'),
-            text: 'Auto-compiling builds save you the most k-weight for your creative.'    
-            },
-            {
-            img: require('../../images/brackets.png'),
-            text: 'Flexible tools enable automation & simplify production.'
-            }
+	render() {
+		const display = this.state.show ? { visibility: 'visible' } : { visibility: 'hidden' }
 
-        ]
+		const brackets = [
+			{
+				text: 'Templates optimized for load-speed, compatible with all ad networks.'
+			},
+			{
+				text: 'Open-source components, makes authoring & customization easy.'
+			},
+			{
+				text: 'Compiled builds, saves k-weight for your creative.'
+			},
+			{
+				text: 'Flexible tools, fits your process & enable automation.'
+			}
+		]
 
-         return (
-         <div  className='bracket-container'>
-      {myBracket.map(function(bracket, index){
-         return (
-          
-             
-       <div style={display} key={index} className='brackets-list'>
-        <p className='bracket-text'>{bracket.text}</p>
-               <img src={bracket.img} className='bracket-img' alt='bracket img'/>
-                  </div>
-    
-            
-            )
-       })}
-      <img src={PlusSign} onClick={this.showBrackets} className="plus-sign" alt="plus-sign" />
-
-      </div> 
-      
-    );
-         
-
-    };
+		return (
+			<div className="bracket-container">
+				<div className="bracket-row">
+					<div style={display} className="brackets-list">
+						<div className="bracket-text">{brackets[0].text}</div>
+						<img src={bracketImg} className="bracket-img" alt="bracket img" />
+					</div>
+					<div style={display} className="brackets-list">
+						<div className="bracket-text">{brackets[1].text}</div>
+						<img src={bracketImg} className="bracket-img" alt="bracket img" />
+					</div>
+				</div>
+				<div className="bracket-row">
+					<img src={PlusSign} onClick={this.showBrackets} className="plus-sign" alt="plus-sign" />
+				</div>
+				<div className="bracket-row">
+					<div style={display} className="brackets-list">
+						<div className="bracket-text">{brackets[2].text}</div>
+						<img src={bracketImg} className="bracket-img" alt="bracket img" />
+					</div>
+					<div style={display} className="brackets-list">
+						<div className="bracket-text">{brackets[3].text}</div>
+						<img src={bracketImg} className="bracket-img" alt="bracket img" />
+					</div>
+				</div>
+			</div>
+		)
+	}
 }
 
-export default BracketsList;
+export default BracketsList
