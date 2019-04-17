@@ -32,13 +32,18 @@
 	/*margin-top: -20px;*/
 	margin: 0;
 	float: left;
+	color: white;
+	cursor:pointer;
 }
 
 .container {
 	width: 50%;
 }
 
-.footer__link__items li a:hover {
+.footer__link__items li:hover {
+	color: black;
+}
+.footer__link__items a:hover {
 	color: black;
 }
 
