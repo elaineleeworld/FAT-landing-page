@@ -15,7 +15,6 @@ class App extends Component {
 			return { mobileOverlayOpen: !prevState.mobileOverlayOpen }
 		})
 	}
-
 	mobileOverlayClickHandler = () => {
 		this.setState({ mobileOverlayOpen: false })
 	}

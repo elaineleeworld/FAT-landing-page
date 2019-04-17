@@ -21,14 +21,15 @@
 	"scripts": {
 		"build-css": "node-sass-chokidar src/ -o src/",
 		"watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
 		"start-js": "react-scripts start",
 		"start": "npm-run-all -p watch-css start-js",
 		"build-js": "react-scripts build",
 		"build": "npm-run-all build-css build-js",
 		"test": "react-scripts test --env=jsdom",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"docker": "npm run build && docker build . -t ff0000/fat-landing-page:latest",
+		"docker:triton": "docker push ff0000/fat-landing-page && triton-docker pull ff0000/fat-landing-page",
+		"triton:run": "triton-docker run -d -p 80:80 -p 443:443 ff0000/fat-landing-page:latest"
 	},
 	"devDependencies": {
 		"gh-pages": "^1.2.0",
